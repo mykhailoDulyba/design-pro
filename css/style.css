@@ -134,13 +134,13 @@ nav ul li a{
     font-weight: 700;
 }
 nav ul li:nth-child(1){
-    background-image: url(http://localhost/blackPro-app/image/Home.jpg);
+    background-image: url(../image/Home.jpg);
     left: 250px;
     z-index: 6;    
 }
 
 nav ul li:nth-child(2){
-    background-image: url(image/About.jpg);
+    background-image: url(../image/About.jpg);
     left: 200px;
     z-index: 5;
     transition: 0.5s;
@@ -174,7 +174,7 @@ nav ul li:nth-child(5):hover{
     left: 100px;
 }
 nav ul li:nth-child(3){
-    background-image: url(image/Services.jpg);
+    background-image: url(../image/Services.jpg);
     left: 150px;
     z-index: 4;
     transition: 0.5s;
@@ -183,16 +183,16 @@ nav ul li:nth-child(4){
     left: 100px;
     transition: 0.5s;
     z-index: 3;
-    background-image: url(image/Portfolio.jpg);
+    background-image: url(../image/Portfolio.jpg);
 }
 nav ul li:nth-child(5){
     left: 50px;
     z-index: 2;
     transition: 0.5s;
-    background-image: url(image/Testimonials.jpg);
+    background-image: url(../image/Testimonials.jpg);
 }
 nav ul li:nth-child(6){
-    background-image: url(image/Contact.jpg);
+    background-image: url(../image/Contact.jpg);
     z-index: 1;
 }
 
@@ -207,7 +207,7 @@ nav ul li:nth-child(6){
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(image/Background.jpg);
+    background-image: url(../image/Background.jpg);
 }
 .home-social-icon{
     height: 100%;
@@ -283,7 +283,7 @@ header{
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(image/Video.jpg);
+    background-image: url(../image/Video.jpg);
     transition: 0.5s;
 }
 #about-card p {
