@@ -1,0 +1,300 @@
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project:	Wedding
+Version:	1.0.0
+Author: 
+Website: 
+Purchase: 
+-------------------------------------------------------------------
+[Table of contents]
+ 
+1. Body
+2. Custom css / a
+3. Preloader/ #preloader
+4. Header Css Start / .wd_slider_wrapper
+5. Button Css Start / .wd_btn
+6. Heading Css Start / .wd_heading
+7. About Wrapper css Start / .wd_about_wrapper
+8. Story css Start / .wd_story_wrapper
+9. Event css Start / .wd_event_wrapper
+10. Guest css Start / .wd_guest_wrapper
+11. Testimomnial css Start / .wd_testimonial_wrapper
+12. Family css Start / .wd_family_wrapper
+13. Gallery css Start / .wd_gallery_wrapper
+14. Blog css Start / .wd_blog_wrapper
+15. Contact css Start / .wd_contact_wrapper
+16. Footer css Start / .wd_footer_wrapper
+17. Responsive css Start / .wd_logo
+*/
+
+/*--------- Basic -------*/
+body, html{
+	/* font-family: 'Lora', serif; */
+	font-size: 16px;
+	line-height: 23px;
+	color: #797979;
+	/* overflow-x: hidden; */
+}
+/*---------- Custom Css Start -------*/
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700,900');
+a {
+	color: #797979;
+	text-decoration: none;
+}
+a:hover, a:focus {
+	color: #707070;
+	text-decoration: none;
+}
+a:focus {
+	outline: none;
+}
+ul {
+    margin: 0px;
+    padding: 0;
+}
+li {
+    list-style: none;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	/* font-family: 'Great Vibes', cursive; */
+	line-height: 1.1;
+	font-weight:400;
+    color: #222222;
+    margin: 0;
+}
+input, select, button {
+	outline: none;
+}
+input:focus, select:focus, button:focus {
+	outline: none;
+	box-shadow:none;
+}
+textarea {
+	outline: none;
+}
+textarea:focus {
+	outline: none;
+	box-shadow:none;
+}
+
+/*-- Preloader css start --*/
+
+
+
+/*-- Header Css Start --*/
+
+.page {
+    display: flex;
+    height: 100vh;
+}
+.page > header {
+    height: 100%;
+}
+.page header nav {
+    width: 590px;
+    position: relative;
+    height: 100%;
+}
+nav ul {
+    display: flex;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: -250px;
+    padding: 0;
+}
+nav ul li {
+    display: flex;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 140px;
+    position: relative;
+    justify-content: center;   
+    box-shadow: 8px 0px 20px black;
+}
+nav ul li::before{    
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+nav ul li:hover:before{
+    background-color:rgba(60, 115, 79, 0.8)
+}
+nav ul li a{
+    position: relative;
+    font-size: 18px;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 700;
+}
+nav ul li:nth-child(1){
+    background-image: url(http://localhost/blackPro-app/image/Home.jpg);
+    left: 250px;
+    z-index: 6;    
+}
+
+nav ul li:nth-child(2){
+    background-image: url(http://localhost/blackPro-app/image/About.jpg);
+    left: 200px;
+    z-index: 5;
+    transition: 0.5s;
+}
+@keyframes nextarrow {
+    0% {
+        left: 200px;
+    }
+    50% {
+        left: 270px;       
+    }
+    51%{
+        z-index: 6;
+    }
+    100%{
+        z-index: 6;
+    }
+  }
+nav ul li:nth-child(2):hover{
+    animation: nextarrow 1s ;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+}
+nav ul li:nth-child(3):hover{
+    left: 200px;
+}
+nav ul li:nth-child(4):hover{
+    left: 150px;
+}
+nav ul li:nth-child(5):hover{
+    left: 100px;
+}
+nav ul li:nth-child(3){
+    background-image: url(http://localhost/blackPro-app/image/Services.jpg);
+    left: 150px;
+    z-index: 4;
+    transition: 0.5s;
+}
+nav ul li:nth-child(4){
+    left: 100px;
+    transition: 0.5s;
+    z-index: 3;
+    background-image: url(http://localhost/blackPro-app/image/Portfolio.jpg);
+}
+nav ul li:nth-child(5){
+    left: 50px;
+    z-index: 2;
+    transition: 0.5s;
+    background-image: url(http://localhost/blackPro-app/image/Testimonials.jpg);
+}
+nav ul li:nth-child(6){
+    background-image: url(http://localhost/blackPro-app/image/Contact.jpg);
+    z-index: 1;
+}
+
+
+#content {
+    width: 100%;
+}
+
+#home-card{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(http://localhost/blackPro-app/image/Background.jpg);
+}
+.home-social-icon{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 80px;
+
+}
+
+.home-view{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 10fr 1fr;
+}
+.home-main-screen {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.home-view>div{
+    padding-right: 40px;
+}
+.home-video>div img {
+    max-width: 640px;
+    width: 100%;
+    height: auto;
+}
+.home-video{
+    justify-self: end;
+    grid-column: 3/5;
+    grid-row: 1/3;
+}
+.home-title{
+    align-self: end;
+    grid-column: 1/3;
+    grid-row: 1/3;
+}
+
+.home-title h1{
+  font-size: 5vw;
+  color: #fff;
+}
+.home-title h2{
+    font-size: 60px;
+    color: #fff;
+  }
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+.home-footer-info{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+#about-card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    position: relative;
+    top:0;
+    z-index: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(http://localhost/blackPro-app/image/Video.jpg);
+    transition: 0.5s;
+}
+#about-card p {
+    padding:20px;
+    background: black;
+}
+.on-card {
+    top: -100% !important;  
+    z-index: 1 !important;  
+}
+.off-card{
+    top: 0% !important;  
+}
+
