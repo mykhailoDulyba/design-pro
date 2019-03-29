@@ -89,116 +89,126 @@ textarea:focus {
     height: 100vh;
 }
 .page > header {
+    width: 40%;
     height: 100%;
 }
-.page header nav {
-    width: 590px;
-    position: relative;
-    height: 100%;
+nav {
+    max-width: 590px;
 }
 nav ul {
     display: flex;
-    height: 100%;
+}
+
+nav ul li {
+    position: relative;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    width: 98px;
+    overflow: hidden;
+    z-index: 0;
+    height: 100vh;
+    cursor: pointer;
+    transition: all 0.4s;
+    box-shadow: 14px -1px 20px rgba(0, 0, 0, 0.77);
+}
+
+nav ul li a {
+    position: absolute;
+    color: #fff;
+    z-index: 4;
+    top: 50%;
+    transition: all 0.4s;
+}
+nav ul li:before {
+    content: '';
+    display: block;
+    width: 191px;
     position: absolute;
     top: 0;
-    left: -250px;
-    padding: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.78);
+    z-index: 3;
+    transition: all 0.4s;
 }
-nav ul li {
-    display: flex;
-    align-items: center;
+nav ul li:after {
+    /* content: ''; */
+    display: block;
+    width: 2px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    height: 60px;
+    background: #fff;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s;
+    
+}
+
+nav ul li:hover:before{
+    background:rgba(0, 175, 170, 0.51);
+}
+
+nav ul li:hover {
+    width: 120px;
+    transition: all 0.4s;
+}
+
+nav ul li:hover a {
+    /* top: 30%; */
+}
+nav ul li:hover:after{
+    /* top: 45%; */
+    height: 130px;
+}
+
+nav ul li:nth-child(1) {
+    z-index: 11;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 140px;
-    position: relative;
-    justify-content: center;   
-    box-shadow: 8px 0px 20px black;
+    background-image: url(http://localhost/blackPro-app/image/Home.jpg);
 }
-nav ul li::before{    
-    content: '';
-    display: block;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: rgba(0, 0, 0, 0.8);
+nav ul li:nth-child(2) {
+    z-index: 10;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(http://localhost/blackPro-app/image/About.jpg);
 }
-nav ul li:hover:before{
-    background-color:rgba(60, 115, 79, 0.8)
+nav ul li:nth-child(3) {
+    z-index: 9;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(http://localhost/blackPro-app/image/Services.jpg);
 }
-nav ul li a{
-    position: relative;
-    font-size: 18px;
-    color: white;
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 700;
+nav ul li:nth-child(4) {
+    z-index: 8;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(http://localhost/blackPro-app/image/Portfolio.jpg);
 }
-nav ul li:nth-child(1){
-    background-image: url(../image/Home.jpg);
-    left: 250px;
-    z-index: 6;    
+nav ul li:nth-child(5) {
+    z-index: 7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(http://localhost/blackPro-app/image/Testimonials.jpg);
 }
-
-nav ul li:nth-child(2){
-    background-image: url(../image/About.jpg);
-    left: 200px;
-    z-index: 5;
-    transition: 0.5s;
+nav ul li:nth-child(6) {
+    z-index: 6;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(http://localhost/blackPro-app/image/Contact.jpg);
 }
-@keyframes nextarrow {
-    0% {
-        left: 200px;
-    }
-    50% {
-        left: 270px;       
-    }
-    51%{
-        z-index: 6;
-    }
-    100%{
-        z-index: 6;
-    }
-  }
-nav ul li:nth-child(2):hover{
-    animation: nextarrow 1s ;
-    animation-iteration-count: 1;
-    animation-fill-mode:forwards;
-}
-nav ul li:nth-child(3):hover{
-    left: 200px;
-}
-nav ul li:nth-child(4):hover{
-    left: 150px;
-}
-nav ul li:nth-child(5):hover{
-    left: 100px;
-}
-nav ul li:nth-child(3){
-    background-image: url(../image/Services.jpg);
-    left: 150px;
-    z-index: 4;
-    transition: 0.5s;
-}
-nav ul li:nth-child(4){
-    left: 100px;
-    transition: 0.5s;
-    z-index: 3;
-    background-image: url(../image/Portfolio.jpg);
-}
-nav ul li:nth-child(5){
-    left: 50px;
-    z-index: 2;
-    transition: 0.5s;
-    background-image: url(../image/Testimonials.jpg);
-}
-nav ul li:nth-child(6){
-    background-image: url(../image/Contact.jpg);
-    z-index: 1;
-}
-
 
 #content {
-    width: 100%;
+    width: 70%;
 }
 
 #home-card{
@@ -207,7 +217,7 @@ nav ul li:nth-child(6){
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../image/Background.jpg);
+    background-image: url(http://localhost/blackPro-app/image/Background.jpg);
 }
 .home-social-icon{
     height: 100%;
@@ -257,10 +267,10 @@ nav ul li:nth-child(6){
     font-size: 60px;
     color: #fff;
   }
-header{
+/* header{
     display: flex;
     justify-content: space-between;
-}
+} */
 
 .home-footer-info{
     display: flex;
@@ -283,7 +293,7 @@ header{
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(../image/Video.jpg);
+    background-image: url(http://localhost/blackPro-app/image/Video.jpg);
     transition: 0.5s;
 }
 #about-card p {
