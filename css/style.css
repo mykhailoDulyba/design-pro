@@ -28,6 +28,40 @@ Purchase:
 17. Responsive css Start / .wd_logo
 */
 
+
+@font-face {
+    font-family: 'Nexa Script Thin';
+    src: url('NexaScript-Thin.eot');
+    src: url('NexaScript-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../css/fonts/NexaScript-Thin.woff') format('woff'),
+    url('../css/fonts/NexaScript-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Cyr Thin';
+    src: url('HelveticaNeueCyr-Thin.eot');
+    src: url('HelveticaNeueCyr-Thin.eot?#iefix') format('embedded-opentype'),
+    url('../css/fonts/HelveticaNeueCyr-Thin.woff') format('woff'),
+    url('../css/fonts/HelveticaNeueCyr-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Helvetica Neue Cyr Black';
+    src: url('HelveticaNeueCyr-Black.eot');
+    src: url('HelveticaNeueCyr-Black.eot?#iefix') format('embedded-opentype'),
+    url('../css/fonts/HelveticaNeueCyr-Black.woff') format('woff'),
+    url('../css/fonts/HelveticaNeueCyr-Black.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
+
+
+
 /*--------- Basic -------*/
 body, html{
 	/* font-family: 'Lora', serif; */
@@ -85,12 +119,15 @@ textarea:focus {
 /*-- Header Css Start --*/
 
 .page {
+    width: 100%;
     display: flex;
+    background: #171717;
     height: 100vh;
+    justify-content: space-between;
 }
 .page > header {
+    max-width: 590px;
     width: 40%;
-    height: 100%;
 }
 nav {
     max-width: 590px;
@@ -156,55 +193,204 @@ nav ul li:hover {
     transition: all 0.4s;
 }
 
-nav ul li:hover a {
-    /* top: 30%; */
+nav ul li a {
+    font-family: 'Helvetica Neue Cyr Thin';
+    font-size: 15px;
+    font-weight: 600;
 }
+
+
 nav ul li:hover:after{
-    /* top: 45%; */
     height: 130px;
 }
+
+nav ul li:nth-child(1):after{
+        content: '';
+        display: block;
+        width: 2px;
+        position: absolute;
+        top: 37%;
+        left: 50%;
+        height: 0px;
+        background: #fff;
+        z-index: 3;
+        transform: translate(-50%, -50%);
+        transition: all 0.4s;
+}
+nav ul li:nth-child(1):hover:after{
+    height: 60px;
+}
+
+
+nav ul li:nth-child(2):after{
+    content: '';
+    display: block;
+    width: 2px;
+    position: absolute;
+    top: 47%;
+    left: 50%;
+    height: 0px;
+    background: #fff;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s;
+}
+nav ul li:nth-child(2):hover:after{
+height: 60px;
+}
+
+
+nav ul li:nth-child(3):after{
+    content: '';
+    display: block;
+    width: 2px;
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    height: 0px;
+    background: #fff;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s;
+}
+nav ul li:nth-child(3):hover:after{
+height: 60px;
+}
+
+
+nav ul li:nth-child(4):after{
+    content: '';
+    display: block;
+    width: 2px;
+    position: absolute;
+    top: 67%;
+    left: 50%;
+    height: 0px;
+    background: #fff;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s;
+}
+nav ul li:nth-child(4):hover:after{
+height: 60px;
+}
+
+
+nav ul li:nth-child(5):after{
+    content: '';
+    display: block;
+    width: 2px;
+    position: absolute;
+    top: 77%;
+    left: 50%;
+    height: 0px;
+    background: #fff;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s;
+}
+nav ul li:nth-child(5):hover:after{
+height: 60px;
+}
+
+
+nav ul li:nth-child(6):after{
+    content: '';
+    display: block;
+    width: 2px;
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    height: 0px;
+    background: #fff;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    transition: all 0.4s;
+}
+nav ul li:nth-child(6):hover:after{
+height: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav ul li:nth-child(1) a{
+    top: 25%;
+}  
+nav ul li:nth-child(2) a{
+    top: 35%;
+}  
+nav ul li:nth-child(3) a{
+    top: 45%;
+}  
+nav ul li:nth-child(4) a{
+    top: 55%;
+}  
+nav ul li:nth-child(5) a{
+    top: 65%
+}  
+nav ul li:nth-child(6) a{
+    top: 75%;
+}  
 
 nav ul li:nth-child(1) {
     z-index: 11;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(http://localhost/blackPro-app/image/Home.jpg);
+    background-image: url(../image/Home.jpg);
 }
 nav ul li:nth-child(2) {
     z-index: 10;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(http://localhost/blackPro-app/image/About.jpg);
+    background-image: url(../image/About.jpg);
 }
 nav ul li:nth-child(3) {
     z-index: 9;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(http://localhost/blackPro-app/image/Services.jpg);
+    background-image: url(../image/Services.jpg);
 }
 nav ul li:nth-child(4) {
     z-index: 8;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(http://localhost/blackPro-app/image/Portfolio.jpg);
+    background-image: url(../image/Portfolio.jpg);
 }
 nav ul li:nth-child(5) {
     z-index: 7;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(http://localhost/blackPro-app/image/Testimonials.jpg);
+    background-image: url(../image/Testimonials.jpg);
 }
 nav ul li:nth-child(6) {
     z-index: 6;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(http://localhost/blackPro-app/image/Contact.jpg);
+    background-image: url(../image/Contact.jpg);
 }
 
 #content {
@@ -217,7 +403,7 @@ nav ul li:nth-child(6) {
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(http://localhost/blackPro-app/image/Background.jpg);
+    background-image: url(../image/Background.jpg);
 }
 .home-social-icon{
     height: 100%;
@@ -226,7 +412,10 @@ nav ul li:nth-child(6) {
     align-items: center;
     width: 100%;
     max-width: 80px;
+}
 
+.home-social-icon ul li{
+    padding-bottom: 5px;
 }
 
 .home-view{
@@ -243,34 +432,91 @@ nav ul li:nth-child(6) {
 .home-view>div{
     padding-right: 40px;
 }
+
+.home-video>div {
+    position: relative;
+}
+.home-video>div:before {
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background: rgba(23, 23, 23, 0.73);
+    z-index: 5;
+}
+
+.home-video>div p {
+    margin: 0;
+    display: block;
+    z-index: 5;
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    width: 100%;
+    font-size: 12px;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: 'Helvetica Neue Cyr Thin';
+    text-align: center;
+}
+
 .home-video>div img {
     max-width: 640px;
     width: 100%;
     height: auto;
+    display: block;
+}
+.inner-video svg{
+    display: block;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 23px;
+    z-index: 6;
+    transform: translate(-50%, -50%);
 }
 .home-video{
     justify-self: end;
     grid-column: 3/5;
     grid-row: 1/3;
+    padding-top: 20px;
 }
 .home-title{
     align-self: end;
     grid-column: 1/3;
     grid-row: 1/3;
+    padding-bottom: 30px;
 }
 
 .home-title h1{
   font-size: 5vw;
   color: #fff;
+  text-transform: uppercase;
+  font-family: 'Helvetica Neue Cyr Thin';
+  font-weight: 900;
+}
+
+
+.home-title h1:nth-child(2), .home-title h1:nth-child(3) {
+    color: #00afaa;;
+    font-size: 5vw;
+    font-family: 'Helvetica Neue Cyr Black';
 }
 .home-title h2{
-    font-size: 60px;
+    font-size: 26px;
     color: #fff;
+    text-transform: uppercase;
+    font-family: 'Helvetica Neue Cyr Thin';
   }
-/* header{
+.home-view header{
     display: flex;
     justify-content: space-between;
-} */
+    padding-top: 20px;
+}
 
 .home-footer-info{
     display: flex;
@@ -293,7 +539,7 @@ nav ul li:nth-child(6) {
     display: flex;
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: url(http://localhost/blackPro-app/image/Video.jpg);
+    background-image: url(../image/Video.jpg);
     transition: 0.5s;
 }
 #about-card p {
@@ -308,3 +554,17 @@ nav ul li:nth-child(6) {
     top: 0% !important;  
 }
 
+.copirate, .location, .email a{
+    font-family: 'Helvetica Neue Cyr Thin';
+    color: #fff;
+    font-size: 13px;
+}
+
+.email, .location {
+    padding-right: 20px;
+}
+.logo a{
+    font-family: 'Nexa Script Thin';
+    color: #fff;
+    font-size: 22px;
+}
