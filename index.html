@@ -20,7 +20,13 @@ Purchase:
 	<meta name="MobileOptimized" content="320" />
   <!--srart theme style -->    
   <link rel="stylesheet" href="css/normalize.css">  
-  <link rel="stylesheet" href="css/style.css">   
+  <link rel="stylesheet" href="css/main.css">   
+  <link rel="stylesheet" href="css/home.css"> 
+  <link rel="stylesheet" href="css/about.css"> 
+  <link rel="stylesheet" href="css/services.css"> 
+  <link rel="stylesheet" href="css/portfolio.css"> 
+  <link rel="stylesheet" href="css/testimonials.css"> 
+  <link rel="stylesheet" href="css/contact.css"> 
   <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 
  
@@ -28,9 +34,26 @@ Purchase:
 	<link rel="shortcut icon" type="image/ico" href="http://localhost/design-pro/image/favicon-32x32.png" />
 </head>
 <body>
+  <div class="open">
+    <div class="layer2 layer data"></div>
+    <div class="layer3 layer data"></div>
+    <div class="layer4 layer data"></div>
+    <div class="layer5 layer data"></div>
+    <div class="layer6 layer data"></div>
+    <div class="layer7 layer data"></div>
+    <div class="layer8 layer data"></div>
+    <div class="layer9 layer data"></div>
+  </div>
+
   <div class="page">
     <div id="content">
-      <section id="home-card">  
+      <!-- <div class="page-animated">
+        <div class="animated-wrapper">
+          <div class="up1"></div>    
+          <div class="up2"></div>  
+        </div>      
+      </div> -->
+      <section id="main-card">  
         <div class="home-social-icon"> 
           <ul>
             <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
@@ -40,7 +63,7 @@ Purchase:
             <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
           </ul>
         </div>
-        <div class="home-view">
+        <div id="" class="main-card-view" >
           <header>
             <div class="logo">
               <a href="">DesignX</a>
@@ -49,8 +72,7 @@ Purchase:
               <a href="">yourmail@domain.com</a>
             </div>
           </header>
-          <div class="home-main-screen">
-
+          <div class="card-section home-card active-section">
             <div class="home-video">
               <div class="inner-video">
                   <img src="./image/Video.jpg" alt="">       
@@ -59,367 +81,245 @@ Purchase:
               </div>
             </div>
             <div class="home-title">
-              <h1>I'M</h1>
+              <h1>I’M</h1>
               <h1>MARK</h1>
               <h1>PETERSON</h1>
-              <h2>Web design</h2>
+              <h2>Web DESIGNER</h2>
             </div>
           </div>
-          <footer class="home-footer-info">
-            <div class="copirate">
-              <p>Copyright © 2019 DesignX | All right reserved.</p>
-            </div>
-            <div class="location">
-              <p>Location: Ukraine, Lviv</p>
-            </div>
-          </footer>
-        </div>
-      </section>
-
-
-      <section id="about-card">
-        <div class="home-social-icon"> 
-          <ul>
-            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href=""><i class="fab fa-instagram"></i></a></li>
-            <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
-          </ul>
-        </div>
-        <div class="home-view">
-          <header>
-            <div class="logo">
-              <a href="">DesignX</a>
-            </div>
-            <div class="email">
-              <a href="">yourmail@domain.com</a>
-            </div>
-          </header>
-          <div class="about-main-screen">
-            <div class="about-text"> 
-              <h3>Hello!</h3>
-              <p> I’m a Mark, web designer based on Ukraine.
-                Lorem ipsum dolor sit amet, mei doming blandit ne, cu 
-                eos nostro percipitur comprehensam, ne his case ancillae 
-                efficiendi. Tincidunt adolescens ut has. Lorem ipsum dolor 
-                sit amet, mei doming blandit ne, cu eos nostro percipitur 
-                comprehensam, ne his case ancillae efficiendi.
-              </p>  
-            </div>
-            <div class="about-btn-preview">
-              <button>Preview CV</button>
-              <a href=""><i class="fas fa-download"></i></a>
-            </div> 
-            <div class="about-counter">
-              <div class="counter-block">
-                <div><p>420</p></div>
-                <h3>Finished project</h3>
+          <div id="about-card" class="card-section about-card">
+            <div class="about-wrap">
+              <div class="about-text"> 
+                <h3>Hello!</h3>
+                <p> <span>I’m a Mark</span>, web designer based on Ukraine.
+                  Lorem ipsum dolor sit amet, mei doming blandit ne, cu 
+                  eos nostro percipitur comprehensam, ne his case ancillae 
+                  efficiendi. Tincidunt adolescens ut has. Lorem ipsum dolor 
+                  sit amet, mei doming blandit ne, cu eos nostro percipitur 
+                  comprehensam, ne his case ancillae efficiendi.
+                </p>  
               </div>
-              <div class="counter-block">
-                <div><p>382</p></div>
-                <h3>Happy customers</h3>
-              </div>
-              <div class="counter-block">
-                <div><p>10</p></div>
-                <h3>Project in progress</h3>
-              </div>
-              <div class="counter-block">
-                <div><p>548</p></div>
-                <h3>Working houres</h3>
+              <div class="about-btn-preview">
+                <button>Preview CV</button>
+                <a href=""><i class="fas fa-download"></i></a>
+              </div> 
+              <div class="about-counter">
+                <div class="counter-block">
+                  <div class="counter-block-inner">
+                    <p data-count="420" class="count">420</p>
+                    <h3>Finished project</h3>
+                  </div>                  
+                </div>
+                <div class="counter-block">           
+                  <div class="counter-block-inner">
+                    <p data-count="382" class="count">382</p>
+                    <h3>Happy customers</h3>
+                  </div>
+                </div>
+                <div class="counter-block">                  
+                  <div class="counter-block-inner">
+                      <p data-count="123" class="count">123</p>
+                      <h3>Project in progress</h3>
+                  </div>
+                </div>
+                <div class="counter-block">
+                  <div class="counter-block-inner">
+                      <p data-count="548" class="count">548</p>
+                      <h3>Working houres</h3>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <footer class="home-footer-info">
-            <div class="copirate">
-              <p>Copyright © 2019 DesignX | All right reserved.</p>
-            </div>
-            <div class="location">
-              <p>Location: Ukraine, Lviv</p>
-            </div>
-          </footer>
-        </div>
-      </section>
-
-      <section id="service-card" >
-        <div class="home-social-icon"> 
-          <ul>
-            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href=""><i class="fab fa-instagram"></i></a></li>
-            <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
-          </ul>
-        </div>
-        <div class="home-view">
-          <header>
-            <div class="logo">
-              <a href="">DesignX</a>
-            </div>
-            <div class="email">
-              <a href="">yourmail@domain.com</a>
-            </div>
-          </header>
-          <div class="service-main-screen">
-            <div class="service-block">
-              <a href=""><i class="fas fa-desktop"></i></a>
-              <h3>Business Analysis</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur 
-                  adipiscing elit. Suspendisse cursus lacus eu 
-                  placerat placerat. Etiam posuere, diam ut vehicula 
-                  egestas, leo urna tempor felis, a commodo nulla ipsum venenatis diam. </p>
-            </div>
-            <div class="service-block">
-              <a href=""><i class="fas fa-pencil-ruler"></i></a>
-              <h3>Graphic & Web Design</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur 
-                  adipiscing elit. Suspendisse cursus lacus eu 
-                  placerat placerat. Etiam posuere, diam ut vehicula 
-                  egestas, leo urna tempor felis, a commodo nulla ipsum venenatis diam. </p>
-            </div>
-            <div class="service-block">
-              <a href=""><i class="far fa-window-maximize"></i></a>
-              <h3>Development</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur 
-                  adipiscing elit. Suspendisse cursus lacus eu 
-                  placerat placerat. Etiam posuere, diam ut vehicula 
-                  egestas, leo urna tempor felis, a commodo nulla ipsum venenatis diam. </p>
-            </div>
-            <div class="service-block">
-              <a href=""><i class="fas fa-pencil-alt"></i></a>
-              <h3>Copy Writing</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur 
-                  adipiscing elit. Suspendisse cursus lacus eu 
-                  placerat placerat. Etiam posuere, diam ut vehicula 
-                  egestas, leo urna tempor felis, a commodo nulla ipsum venenatis diam. </p>
-            </div>
-            <div class="service-block">
-              <a href=""><i class="fas fa-volume-up"></i></a>
-              <h3>Advertising</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur 
-                  adipiscing elit. Suspendisse cursus lacus eu 
-                  placerat placerat. Etiam posuere, diam ut vehicula 
-                  egestas, leo urna tempor felis, a commodo nulla ipsum venenatis diam. </p>
-            </div>
-            <div class="service-block">
-              <a href=""><i class="fas fa-headset"></i></a>
-              <h3>Support</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur 
-                  adipiscing elit. Suspendisse cursus lacus eu 
-                  placerat placerat. Etiam posuere, diam ut vehicula 
-                  egestas, leo urna tempor felis, a commodo nulla ipsum venenatis diam. </p>
-            </div>
-          </div>
-          <footer class="home-footer-info">
-            <div class="copirate">
-              <p>Copyright © 2019 DesignX | All right reserved.</p>
-            </div>
-            <div class="location">
-              <p>Location: Ukraine, Lviv</p>
-            </div>
-          </footer>
-        </div>
-      </section>
-
-
-      <section id="protfolio-card" >
-        <div class="home-social-icon"> 
-          <ul>
-            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href=""><i class="fab fa-instagram"></i></a></li>
-            <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
-          </ul>
-        </div>
-        <div class="home-view">
-          <header>
-            <div class="logo">
-              <a href="">DesignX</a>
-            </div>
-            <div class="email">
-              <a href="">yourmail@domain.com</a>
-            </div>
-          </header>
-          <div class="portfolio-main-screen">
-            <div class="portfolio-block">
-              <img src="http://localhost//design-pro/image/portfolio/1.jpg" alt="">
-            </div>
-            <div class="portfolio-block">
-              <img src="http://localhost//design-pro/image/portfolio/2.jpg" alt="">
-            </div>
-            <div class="portfolio-block">
-              <img src="http://localhost//design-pro/image/portfolio/3.jpg" alt="">
-            </div>
-            <div class="portfolio-block">
-              <img src="http://localhost//design-pro/image/portfolio/4.jpg" alt="">
-            </div>
-            <div class="portfolio-block">
-              <img src="http://localhost//design-pro/image/portfolio/5.jpg" alt="">
-            </div>
-            <div class="portfolio-block">
-              <img src="http://localhost//design-pro/image/portfolio/6.jpg" alt="">
-            </div>
-          </div>
-          <footer class="home-footer-info">
-            <div class="copirate">
-              <p>Copyright © 2019 DesignX | All right reserved.</p>
-            </div>
-            <div class="location">
-              <p>Location: Ukraine, Lviv</p>
-            </div>
-          </footer>
-        </div>
-      </section>
-
-      <section id="testimonial-card" >
-        <div class="home-social-icon"> 
-          <ul>
-            <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-            <li><a href=""><i class="fab fa-twitter"></i></a></li>
-            <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-            <li><a href=""><i class="fab fa-instagram"></i></a></li>
-            <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
-          </ul>
-        </div>
-        <div class="home-view">
-          <header>
-            <div class="logo">
-              <a href="">DesignX</a>
-            </div>
-            <div class="email">
-              <a href="">yourmail@domain.com</a>
-            </div>
-          </header>
-          <div class="testimonial-main-screen">
-            <div class="testimonial-block">
-                <div class="testimonial-text">
-                    <span>"</span>
-                    <h3>Lorem ipsum dolor sit amet, consectetur 
+          </div>       
+          <div class="card-section services-card" >
+            <div class="services-wrap">
+                <div class="service-block">
+                    <a href=""><i class="fas fa-desktop"></i></a>
+                    <h3>Business Analysis</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur 
                         adipiscing elit. Suspendisse cursus lacus eu 
                         placerat placerat. Etiam posuere, diam ut vehicula 
-                        egestas, leo urna tempor felis, a commodo nulla ipsum venenatis diam</h3>
-                    <span>"</span>
-                </div>
-                <div class="testimonial-img testimonial-img-1">
-                </div>
-                <h2>Frenk Larsoni</h2>
-                <p>customer</p> 
-            </div>
-            <div class="testimonial-block">
-                <div class="testimonial-text">
-                    <span>"</span>
-                    <h3>Lorem ipsum dolor sit amet, consectetur 
+                        egestas, leo urna tempor felis, a commodo nulla ipsum venenatis diam. </p>
+                  </div>
+                  <div class="service-block">
+                    <a href=""><i class="fas fa-pencil-ruler"></i></a>
+                    <h3>Graphic & Web Design</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur 
                         adipiscing elit. Suspendisse cursus lacus eu 
                         placerat placerat. Etiam posuere, diam ut vehicula 
-                        egestas, leo urna tempor felis, a commodo nulla ipsum venenatis diam</h3>
-                    <span>"</span>
-                </div>
-                <div class="testimonial-img testimonial-img-2">
-                </div>
-                <h2>Frenk Larsoni</h2>
-                <p>customer</p> 
-            </div>
-            <div class="testimonial-block">
-                <div class="testimonial-text">
-                    <span>"</span>
-                    <h3>Lorem ipsum dolor sit amet, consectetur 
+                        egestas, leo urna tempor felis, a commodo nulla ipsum venenatis diam. </p>
+                  </div>
+                  <div class="service-block">
+                    <a href=""><i class="far fa-window-maximize"></i></a>
+                    <h3>Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur 
                         adipiscing elit. Suspendisse cursus lacus eu 
                         placerat placerat. Etiam posuere, diam ut vehicula 
-                        egestas, leo urna tempor felis, a commodo nulla ipsum venenatis diam</h3>
-                    <span>"</span>
-                </div>
-                <div class="testimonial-img testimonial-img-3">
-                </div>
-                <h2>Frenk Larsoni</h2>
-                <p>customer</p> 
-            </div>
-            <div class="testimonial-block">
-                <div class="testimonial-text">
-                    <span>"</span>
-                    <h3>Lorem ipsum dolor sit amet, consectetur 
+                        egestas, leo urna tempor felis, a commodo nulla ipsum venenatis diam. </p>
+                  </div>
+                  <div class="service-block">
+                    <a href=""><i class="fas fa-pencil-alt"></i></a>
+                    <h3>Copy Writing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur 
                         adipiscing elit. Suspendisse cursus lacus eu 
                         placerat placerat. Etiam posuere, diam ut vehicula 
-                        egestas, leo urna tempor felis, a commodo nulla ipsum venenatis diam</h3>
-                    <span>"</span>
-                </div>
-                <div class="testimonial-img testimonial-img-4">
-                </div>
-                <h2>Frenk Larsoni</h2>
-                <p>customer</p> 
+                        egestas, leo urna tempor felis, a commodo nulla ipsum venenatis diam. </p>
+                  </div>
+                  <div class="service-block">
+                    <a href=""><i class="fas fa-volume-up"></i></a>
+                    <h3>Advertising</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit. Suspendisse cursus lacus eu 
+                        placerat placerat. Etiam posuere, diam ut vehicula 
+                        egestas, leo urna tempor felis, a commodo nulla ipsum venenatis diam. </p>
+                  </div>
+                  <div class="service-block">
+                    <a href=""><i class="fas fa-headset"></i></a>
+                    <h3>Support</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur 
+                        adipiscing elit. Suspendisse cursus lacus eu 
+                        placerat placerat. Etiam posuere, diam ut vehicula 
+                        egestas, leo urna tempor felis, a commodo nulla ipsum venenatis diam. </p>
+                  </div>
             </div>
           </div>
-          <footer class="home-footer-info">
-            <div class="copirate">
-              <p>Copyright © 2019 DesignX | All right reserved.</p>
+          <div id="" class="card-section portfolio-card">
+            <div class="work-bts">
+                <ul>
+                    <li class="work-bt" data-filter="all">all</li>
+                    <li class="work-bt" data-filter="website">website</li>
+                    <li class="work-bt" data-filter="psd">psd</li>
+                    <li class="work-bt" data-filter="logos">logos</li>
+                </ul>
             </div>
-            <div class="location">
-              <p>Location: Ukraine, Lviv</p>
-            </div>
-          </footer>
+          <div class="gallery">
+            <div class="portfolio-block filter website">
+                <!-- <img src="http://localhost//design-pro/image/portfolio/1.jpg" alt=""> -->
+                <video id="video"     height="100%";
+                 width="100%" poster="http://localhost//design-pro/image/portfolio/2.jpg">
+                    <source src="http://localhost//design-pro/image/BigBuckBunny640x360.m4v" type="video/mp4">                   
+                    Your browser does not support HTML5 video.
+                </video>   
+              </div>
+              <div class="portfolio-block filter website">
+                <img src="http://localhost//design-pro/image/portfolio/2.jpg" alt="">
+              </div>
+              <div class="portfolio-block filter website">
+                <img src="http://localhost//design-pro/image/portfolio/3.jpg" alt="">
+              </div>
+              <div class="portfolio-block filter psd">
+                <img src="http://localhost//design-pro/image/portfolio/4.jpg" alt="">
+              </div>
+              <div class="portfolio-block filter psd">
+                <img src="http://localhost//design-pro/image/portfolio/5.jpg" alt="">
+              </div>
+              <div class="portfolio-block filter psd">
+                <img src="http://localhost//design-pro/image/portfolio/6.jpg" alt="">
+              </div>
+              <div class="portfolio-block filter logos">
+                <img src="http://localhost//design-pro/image/portfolio/1.jpg" alt="">
+              </div>
+              <div class="portfolio-block filter logos">
+                <img src="http://localhost//design-pro/image/portfolio/2.jpg" alt="">
+              </div>
+              <div class="portfolio-block filter logos">
+                <img src="http://localhost//design-pro/image/portfolio/3.jpg" alt="">
+              </div>
+          </div>            
         </div>
-      </section>
-
-      <section id="contact-card" >
-          <div class="home-social-icon"> 
-            <ul>
-              <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
-              <li><a href=""><i class="fab fa-twitter"></i></a></li>
-              <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-              <li><a href=""><i class="fab fa-instagram"></i></a></li>
-              <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
-            </ul>
+        <div class="card-section testimonials-card">
+          <div class="testimonials-wrap">
+              <div class="testimonial-block">
+                  <div class="testimonial-text">
+                      <h3>Lorem ipsum dolor sit amet, consectetur 
+                          adipiscing elit. Suspendisse cursus lacus eu 
+                          placerat placerat. Etiam posuere, diam ut vehicula 
+                          egestas, leo urna tempor felis, a commodo nulla ipsum venenatis diam</h3>
+                  </div>
+                  <div class="testimonial-img testimonial-img-1">
+                  </div>
+                  <h2>Frenk Larsoni</h2>
+                  <p>customer</p> 
+              </div>
+              <div class="testimonial-block">
+                  <div class="testimonial-text">
+                      <h3>Lorem ipsum dolor sit amet, consectetur 
+                          adipiscing elit. Suspendisse cursus lacus eu 
+                          placerat placerat. Etiam posuere, diam ut vehicula 
+                          egestas, leo urna tempor felis, a commodo nulla ipsum venenatis diam</h3>
+                  </div>
+                  <div class="testimonial-img testimonial-img-2">
+                  </div>
+                  <h2>Frenk Larsoni</h2>
+                  <p>customer</p> 
+              </div>
+              <div class="testimonial-block">
+                  <div class="testimonial-text">
+                      <h3>Lorem ipsum dolor sit amet, consectetur 
+                          adipiscing elit. Suspendisse cursus lacus eu 
+                          placerat placerat. Etiam posuere, diam ut vehicula 
+                          egestas, leo urna tempor felis, a commodo nulla ipsum venenatis diam</h3>
+                  </div>
+                  <div class="testimonial-img testimonial-img-3">
+                  </div>
+                  <h2>Frenk Larsoni</h2>
+                  <p>customer</p> 
+              </div>
+              <div class="testimonial-block">
+                  <div class="testimonial-text">
+                      <h3>Lorem ipsum dolor sit amet, consectetur 
+                          adipiscing elit. Suspendisse cursus lacus eu 
+                          placerat placerat. Etiam posuere, diam ut vehicula 
+                          egestas, leo urna tempor felis, a commodo nulla ipsum venenatis diam</h3>
+                  </div>
+                  <div class="testimonial-img testimonial-img-4">
+                  </div>
+                  <h2>Frenk Larsoni</h2>
+                  <p>customer</p> 
+              </div>
           </div>
-          <div class="home-view">
-            <header>
-              <div class="logo">
-                <a href="">DesignX</a>
-              </div>
-              <div class="email">
-                <a href="">yourmail@domain.com</a>
-              </div>
-            </header>
-            <div class="contact-main-screen">
+        </div>
+        <div class="card-section contact-card">
+          <div class="contact-wrap">
               <div class="contact-form">
-                <h3>Let's talk</h3>
-                <form action="">
-                  <label for="">
-                      <input type="text">
-                  </label>
-                  <label for="">
-                      <input type="text">
-                  </label>
-                  <label for="">
-                      <input type="text">
-                  </label>
-                  <textarea name="" id="" cols="30" rows="10"></textarea>
-                  <button>Send message</button>
-                </form>
-              </div>
-              <div id="googleMap" style="width:100%;height:400px;"></div>
-    
-            </div>
-            <footer class="home-footer-info">
-              <div class="copirate">
-                <p>Copyright © 2019 DesignX | All right reserved.</p>
-              </div>
-              <div class="location">
-                <p>Location: Ukraine, Lviv</p>
-              </div>
-            </footer>
+                  <h3>Let's talk</h3>
+                  <form action="">
+                    <label for="">
+                        <input type="text" placeholder="Full Name*">
+                    </label>
+                    <label for="">
+                        <input type="text" placeholder="Your Email*"> 
+                    </label>
+                    <label for="">
+                        <input type="text" placeholder="Subject*">
+                    </label>
+                    <textarea name="" id="" rows="10" placeholder="Message*"></textarea>
+                    <button>Send message</button>
+                  </form>
+                </div>
+                <div id="googleMap" style="width:100%;height:400px;"></div>
           </div>
-        </section>
-     
+        </div>
+          <footer class="home-footer-info">
+            <div class="copirate">
+              <p>Copyright © 2019 DesignX | All right reserved.</p>
+            </div>
+            <div class="location">
+              <p>Location: Ukraine, Lviv</p>
+            </div>
+          </footer>
+        </div>
+      </section>     
     </div>
     <header>
       <nav>
         <ul>
-          <li class="menu" id="home" ><a href="">Home</a></li>
-          <li class="menu" id="about"><a href="">About</a></li>
-          <li class="menu" ><a href="">Services</a></li>
-          <li class="menu" ><a href="">Portfolio</a></li>
-          <li class="menu" ><a href="">Testimonials</a></li>
-          <li class="menu" ><a href="">Contact</a></li>
+          <li class="home" ><a href="home">Home</a></li>
+          <li class="about"><a href="about">About</a></li>
+          <li class="services" ><a href="services">Services</a></li>
+          <li class="portfolio"><a href="portfolio">Portfolio</a></li>
+          <li class="testimonials"><a href="testimonials">Testimonials</a></li>
+          <li class="contact"><a href="contact">Contact</a></li>
         </ul>        
       </nav>
     </header>

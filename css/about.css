@@ -1,0 +1,93 @@
+.about-card{
+    display: none;    
+    grid-template-columns: 1fr 1fr;
+    justify-items: end;
+}
+
+.about-wrap{
+    justify-self: end;
+    align-self: center;
+    grid-column: 2/3;
+}
+
+.about-text {
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 550px;
+    font-size: 17px;
+    line-height: 1.55;
+    color: #fff;    
+}
+.about-text h3 {
+    color: #fff;
+}
+.about-text p {
+    margin: 0;
+}
+
+.about-text p span{
+    font-weight: 700; 
+}
+
+.about-btn-preview button{
+    background: #00afaa;
+    border: none;
+    font-size: 15px;
+    border-radius: 47px;
+    color: #fff;
+    margin-right: 8px;
+    font-weight: 600;
+    padding: 8px 37px 8px 32px;
+}
+
+.about-btn-preview a{
+    color: #fff;
+    font-size: 20px;
+}
+
+.about-counter{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.counter-block{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.counter-block-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.counter-block div p{
+    position: relative;
+    margin: 3px 0 28px 0px;
+    font-size: 9rem;
+    color: #fff;
+    padding-bottom: 25px;
+    font-weight: 600;
+}
+
+.counter-block div p:before {
+    content: '';
+    display: block;
+    background: #fff;
+    width: 100%;
+    height: 1px;
+    position: absolute;
+    top: 145%;
+    left: 0;
+}
+
+.counter-block h3 {
+    color: #fff;
+    font-style: italic;
+    font-size: 1.6rem;
+    align-self: center;
+    padding-top: 15px;
+}
