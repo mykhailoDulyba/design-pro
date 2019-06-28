@@ -86,15 +86,15 @@
 }
 
 .testimonial-img-1{
-    background-image: url(http://localhost//design-pro/image/testim/Photo_1.jpg);
+    background-image: url(../image/testim/Photo_1.jpg);
 }
 
 .testimonial-img-2{
-    background-image: url(http://localhost//design-pro/image/testim/Photo_2.jpg);
+    background-image: url(../image/testim/Photo_2.jpg);
 }
 .testimonial-img-3{
-    background-image: url(http://localhost//design-pro/image/testim/Photo_3.jpg);
+    background-image: url(../image/testim/Photo_3.jpg);
 }
 .testimonial-img-4{
-    background-image: url(http://localhost//design-pro/image/testim/Photo_4.jpg);
+    background-image: url(../image/testim/Photo_4.jpg);
 }

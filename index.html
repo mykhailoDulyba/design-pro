@@ -19,19 +19,19 @@ Purchase:
 	<meta name="author"  content=""/>
 	<meta name="MobileOptimized" content="320" />
   <!--srart theme style -->    
-  <link rel="stylesheet" href="css/normalize.css">  
-  <link rel="stylesheet" href="css/main.css">   
+  <link rel="stylesheet" href="css/normalize.css">    
   <link rel="stylesheet" href="css/home.css"> 
   <link rel="stylesheet" href="css/about.css"> 
   <link rel="stylesheet" href="css/services.css"> 
   <link rel="stylesheet" href="css/portfolio.css"> 
   <link rel="stylesheet" href="css/testimonials.css"> 
   <link rel="stylesheet" href="css/contact.css"> 
+  <link rel="stylesheet" href="css/main.css"> 
   <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 
  
   	<!-- favicon links -->
-	<link rel="shortcut icon" type="image/ico" href="http://localhost/design-pro/image/favicon-32x32.png" />
+	<link rel="shortcut icon" type="image/ico" href="image/favicon-32x32.png" />
 </head>
 <body>
   <div class="open">
@@ -69,6 +69,7 @@ Purchase:
               <a href="">DesignX</a>
             </div>
             <div class="email">
+              <i id="burger-menu" class="burger-menu fas fa-bars fa-2x"></i>
               <a href="">yourmail@domain.com</a>
             </div>
           </header>
@@ -186,44 +187,46 @@ Purchase:
           <div id="" class="card-section portfolio-card">
             <div class="work-bts">
                 <ul>
-                    <li class="work-bt" data-filter="all">all</li>
-                    <li class="work-bt" data-filter="website">website</li>
-                    <li class="work-bt" data-filter="psd">psd</li>
-                    <li class="work-bt" data-filter="logos">logos</li>
+                    <li class="work-bt" data-filter="all">All</li>
+                    <li class="work-bt" data-filter="website">Branding</li>
+                    <li class="work-bt" data-filter="psd">Graphic Design</li>
+                    <li class="work-bt" data-filter="logos">Web Design</li>
+                    <li class="work-bt" data-filter="all">Marketing</li>
+                    <li class="work-bt" data-filter="website">Video</li>
                 </ul>
             </div>
           <div class="gallery">
             <div class="portfolio-block filter website">
-                <!-- <img src="http://localhost//design-pro/image/portfolio/1.jpg" alt=""> -->
-                <video id="video"     height="100%";
+                <img src="image/portfolio/1.jpg" alt="">
+                <!-- <video id="video"     height="100%";
                  width="100%" poster="http://localhost//design-pro/image/portfolio/2.jpg">
                     <source src="http://localhost//design-pro/image/BigBuckBunny640x360.m4v" type="video/mp4">                   
                     Your browser does not support HTML5 video.
-                </video>   
+                </video>    -->
               </div>
               <div class="portfolio-block filter website">
-                <img src="http://localhost//design-pro/image/portfolio/2.jpg" alt="">
+                <img src="image/portfolio/2.jpg" alt="">
               </div>
               <div class="portfolio-block filter website">
-                <img src="http://localhost//design-pro/image/portfolio/3.jpg" alt="">
+                <img src="image/portfolio/3.jpg" alt="">
               </div>
               <div class="portfolio-block filter psd">
-                <img src="http://localhost//design-pro/image/portfolio/4.jpg" alt="">
+                <img src="image/portfolio/4.jpg" alt="">
               </div>
               <div class="portfolio-block filter psd">
-                <img src="http://localhost//design-pro/image/portfolio/5.jpg" alt="">
+                <img src="image/portfolio/5.jpg" alt="">
               </div>
               <div class="portfolio-block filter psd">
-                <img src="http://localhost//design-pro/image/portfolio/6.jpg" alt="">
+                <img src="image/portfolio/6.jpg" alt="">
               </div>
               <div class="portfolio-block filter logos">
-                <img src="http://localhost//design-pro/image/portfolio/1.jpg" alt="">
+                <img src="image/portfolio/1.jpg" alt="">
               </div>
               <div class="portfolio-block filter logos">
-                <img src="http://localhost//design-pro/image/portfolio/2.jpg" alt="">
+                <img src="image/portfolio/2.jpg" alt="">
               </div>
               <div class="portfolio-block filter logos">
-                <img src="http://localhost//design-pro/image/portfolio/3.jpg" alt="">
+                <img src="image/portfolio/3.jpg" alt="">
               </div>
           </div>            
         </div>
@@ -311,8 +314,20 @@ Purchase:
         </div>
       </section>     
     </div>
-    <header>
-      <nav>
+    <header class="main">
+      <nav class="main-menu">
+        <ul>
+          <li class="home" ><a href="home">Home</a></li>
+          <li class="about"><a href="about">About</a></li>
+          <li class="services" ><a href="services">Services</a></li>
+          <li class="portfolio"><a href="portfolio">Portfolio</a></li>
+          <li class="testimonials"><a href="testimonials">Testimonials</a></li>
+          <li class="contact"><a href="contact">Contact</a></li>
+        </ul>        
+      </nav>
+    </header>
+    <header class="mobile">
+      <nav class="mobile-menu">
         <ul>
           <li class="home" ><a href="home">Home</a></li>
           <li class="about"><a href="about">About</a></li>

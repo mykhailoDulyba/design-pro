@@ -215,9 +215,6 @@ Purchase:
 	font-style: normal;
 }
 
-
-
-
 /*--------- Basic -------*/
 body, html{
 	font-size: 10px;
@@ -268,6 +265,7 @@ textarea:focus {
 	box-shadow:none;
 }
 
+
 /*-- Preloader css start --*/
 
 
@@ -275,24 +273,25 @@ textarea:focus {
 /*-- Header Css Start --*/
 
 .page {
+    position: relative;
     width: 100%;
     display: flex;
     background: #171717;
     height: 100vh;
     justify-content: space-between;
 }
-.page > header {
+.page > header.main {
     max-width: 590px;
     width: 100%;
 }
-nav {
+nav.main-menu.main-menu {
     max-width: 590px;
 }
-nav ul {
+nav.main-menu.main-menu ul {
     display: flex;
 }
 
-nav ul li {
+nav.main-menu.main-menu ul li {
     position: relative;
     font-size: 17px;
     display: flex;
@@ -306,14 +305,14 @@ nav ul li {
     box-shadow: 14px -1px 20px rgba(0, 0, 0, 0.77);
 }
 
-nav ul li a {
+nav.main-menu.main-menu ul li a {
     position: absolute;
     color: #fff;
     z-index: 4;
     top: 50%;
     transition: all 0.4s;
 }
-nav ul li:before {
+nav.main-menu.main-menu ul li:before {
     content: '';
     display: block;
     width: 191px;
@@ -325,7 +324,7 @@ nav ul li:before {
     z-index: 3;
     transition: all 0.4s;
 }
-nav ul li:after {
+nav.main-menu.main-menu ul li:after {
     /* content: ''; */
     display: block;
     width: 2px;
@@ -340,26 +339,26 @@ nav ul li:after {
     
 }
 
-nav ul li:hover:before{
+nav.main-menu.main-menu ul li:hover:before{
     background:rgba(0, 175, 170, 0.51);
 }
 
-nav ul li:hover {
+nav.main-menu.main-menu ul li:hover {
     width: 120px;
     transition: all 0.4s;
 }
 
-nav ul li a {
+nav.main-menu.main-menu ul li a {
     font-size: 15px;
     font-weight: 600;
 }
 
 
-nav ul li:hover:after{
+nav.main-menu ul li:hover:after{
     height: 130px;
 }
 
-nav ul li:nth-child(1):after{
+nav.main-menu ul li:nth-child(1):after{
         content: '';
         display: block;
         width: 2px;
@@ -372,12 +371,12 @@ nav ul li:nth-child(1):after{
         transform: translate(-50%, -50%);
         transition: all 0.4s;
 }
-nav ul li:nth-child(1):hover:after{
+nav.main-menu ul li:nth-child(1):hover:after{
     height: 60px;
 }
 
 
-nav ul li:nth-child(2):after{
+nav.main-menu ul li:nth-child(2):after{
     content: '';
     display: block;
     width: 2px;
@@ -390,12 +389,12 @@ nav ul li:nth-child(2):after{
     transform: translate(-50%, -50%);
     transition: all 0.4s;
 }
-nav ul li:nth-child(2):hover:after{
+nav.main-menu ul li:nth-child(2):hover:after{
 height: 60px;
 }
 
 
-nav ul li:nth-child(3):after{
+nav.main-menu ul li:nth-child(3):after{
     content: '';
     display: block;
     width: 2px;
@@ -408,12 +407,12 @@ nav ul li:nth-child(3):after{
     transform: translate(-50%, -50%);
     transition: all 0.4s;
 }
-nav ul li:nth-child(3):hover:after{
+nav.main-menu ul li:nth-child(3):hover:after{
 height: 60px;
 }
 
 
-nav ul li:nth-child(4):after{
+nav.main-menu ul li:nth-child(4):after{
     content: '';
     display: block;
     width: 2px;
@@ -426,12 +425,12 @@ nav ul li:nth-child(4):after{
     transform: translate(-50%, -50%);
     transition: all 0.4s;
 }
-nav ul li:nth-child(4):hover:after{
+nav.main-menu ul li:nth-child(4):hover:after{
 height: 60px;
 }
 
 
-nav ul li:nth-child(5):after{
+nav.main-menu ul li:nth-child(5):after{
     content: '';
     display: block;
     width: 2px;
@@ -444,12 +443,12 @@ nav ul li:nth-child(5):after{
     transform: translate(-50%, -50%);
     transition: all 0.4s;
 }
-nav ul li:nth-child(5):hover:after{
+nav.main-menu ul li:nth-child(5):hover:after{
 height: 60px;
 }
 
 
-nav ul li:nth-child(6):after{
+nav.main-menu ul li:nth-child(6):after{
     content: '';
     display: block;
     width: 2px;
@@ -462,15 +461,15 @@ nav ul li:nth-child(6):after{
     transform: translate(-50%, -50%);
     transition: all 0.4s;
 }
-nav ul li:nth-child(6):hover:after{
+nav.main-menu ul li:nth-child(6):hover:after{
 height: 60px;
 }
 
-nav ul li.active-nav:before{
+nav.main-menu ul li.active-nav.main-menu:before{
     background:rgba(0, 175, 170, 0.51);
 }
     
-nav ul li.active-nav:after{
+nav.main-menu ul li.active-nav.main-menu:after{
     height: 60px;
 }
 
@@ -503,61 +502,61 @@ nav ul li.active-nav:after{
 
 
 
-nav ul li:nth-child(1) a{
+nav.main-menu ul li:nth-child(1) a{
     top: 25%;
 }  
-nav ul li:nth-child(2) a{
+nav.main-menu ul li:nth-child(2) a{
     top: 35%;
 }  
-nav ul li:nth-child(3) a{
+nav.main-menu ul li:nth-child(3) a{
     top: 45%;
 }  
-nav ul li:nth-child(4) a{
+nav.main-menu ul li:nth-child(4) a{
     top: 55%;
 }  
-nav ul li:nth-child(5) a{
+nav.main-menu ul li:nth-child(5) a{
     top: 65%
 }  
-nav ul li:nth-child(6) a{
+nav.main-menu ul li:nth-child(6) a{
     top: 75%;
 }  
 
-nav ul li:nth-child(1) {
+nav.main-menu ul li:nth-child(1) {
     z-index: 11;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../image/Home.jpg);
 }
-nav ul li:nth-child(2) {
+nav.main-menu ul li:nth-child(2) {
     z-index: 10;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../image/About.jpg);
 }
-nav ul li:nth-child(3) {
+nav.main-menu ul li:nth-child(3) {
     z-index: 9;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../image/Services.jpg);
 }
-nav ul li:nth-child(4) {
+nav.main-menu ul li:nth-child(4) {
     z-index: 8;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../image/Portfolio.jpg);
 }
-nav ul li:nth-child(5) {
+nav.main-menu ul li:nth-child(5) {
     z-index: 7;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-image: url(../image/Testimonials.jpg);
 }
-nav ul li:nth-child(6) {
+nav.main-menu ul li:nth-child(6) {
     z-index: 6;
     background-position: center;
     background-repeat: no-repeat;
@@ -622,6 +621,7 @@ nav ul li:nth-child(6) {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 10fr 1fr;
+    position: relative;
 }
 
 .main-card-view>div{
@@ -631,21 +631,24 @@ nav ul li:nth-child(6) {
 .main-card-view header{
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
-    padding-right: 20px;
+    padding: 20px 20px 20px 0;
 }
 
 .home-footer-info{
     display: flex;
     justify-content: space-between;
     padding-right: 20px;
+    padding-top: 15px;
 }
 
 
 
+.burger-menu{
+    display: none;
+    font-size: 23px;
+}
 
-
-.copirate, .location, .email a{
+.copirate, .location, .email a{ 
     color: #fff;
     font-size: 13px;
     font-weight: 300;
@@ -659,6 +662,17 @@ nav ul li:nth-child(6) {
     color: #fff;
     font-size: 22px;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -895,3 +909,90 @@ nav ul li:nth-child(6) {
     }
 }
 
+header.mobile{
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 70;
+    background: #171717;
+}
+
+nav.mobile-menu{
+    width: 100%;
+}
+
+nav.mobile-menu ul{
+    text-align: center;
+    font-size: 18px;
+}
+
+nav.mobile-menu ul li{
+    position: relative;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    color: #bfbfbf;
+}
+
+nav.mobile-menu ul li:before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 80%;
+    height: 1px;
+    background: #797979;
+    transform: translate(-50%, -50%);
+}
+
+
+
+@media only screen and (max-width: 1400px) {
+    body, html{
+        font-size: 8px;
+    }
+    .page > header.main {
+        width: 40%;
+    }
+    .home-title {
+        margin-bottom: 30px;        
+    }
+    .home-social-icon ul li {      
+        font-size: 1.9rem;
+    }
+    .counter-block div p { 
+        font-size: 8rem;
+        padding-bottom: 10px;
+    }
+    .counter-block h3 {
+        padding-top: 0px;
+    }
+
+    .counter-block:first-of-type, .counter-block:nth-of-type(2){
+        margin-bottom: 20px;
+    }
+    .services-wrap {
+        justify-content: center;
+    }
+    
+    
+
+}
+
+@media only screen and (max-width: 1150px) {
+    .page > header.main {
+       display: none;
+    }
+
+    .burger-menu{
+        display: block;
+    }
+    
+    .email a{ 
+        display: none;
+    }
+}

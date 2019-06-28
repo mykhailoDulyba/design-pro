@@ -7,11 +7,13 @@
 }
 
 .work-bts {
-    padding-bottom: 20px;
-    padding-top: 15px;
-    position: fixed;
+    padding-top: 30px;
+    padding-bottom: 30px;
     background: #171717;
-    width: 70%;
+    position: absolute;
+    top: 65px;
+    width: 100%;
+    z-index: 50;
 }
 
 .work-bts ul{
@@ -19,10 +21,10 @@
 }
 
 .work-bts ul li{
-    cursor: pointer;    
-    margin-right: 55px;
-    font-size: 20px;
-    font-weight: 900;
+    cursor: pointer;
+    margin-right: 44px;
+    font-size: 17px;
+    font-weight: 500;
 } 
 
 .work-bts ul li:hover{
@@ -57,6 +59,7 @@
 .portfolio-block img{
     width: 100%;
     display: block;
+    height: 220px;
 }
 
 #video{

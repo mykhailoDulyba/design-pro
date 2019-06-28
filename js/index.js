@@ -36,34 +36,34 @@ function myMap() {
   var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
 
-let myVideo = document.getElementById("video"); 
-document.getElementById("video").addEventListener('click', (event) => {
-  if(myVideo.paused){
-    setTimeout(() => {   
-      myVideo.play();
-      myVideo.controls = true;    
-  }, 380); 
+// let myVideo = document.getElementById("video"); 
+// document.getElementById("video").addEventListener('click', (event) => {
+//   if(myVideo.paused){
+//     setTimeout(() => {   
+//       myVideo.play();
+//       myVideo.controls = true;    
+//   }, 380); 
 
-  myVideo.classList.add("goVideo");
-  const goo= $("#content")
-  goo.addClass('change');
-  }else {
-    $("#video").removeClass("goVideo");
-    const goo= $("#content")
-    $("#video").addClass("then");
-    $("#video").removeClass("goVideo");
-    setTimeout(() => {   
-      $("#video").removeClass("then");
-  }, 420); 
-  goo.removeClass('change');  
+//   myVideo.classList.add("goVideo");
+//   const goo= $("#content")
+//   goo.addClass('change');
+//   }else {
+//     $("#video").removeClass("goVideo");
+//     const goo= $("#content")
+//     $("#video").addClass("then");
+//     $("#video").removeClass("goVideo");
+//     setTimeout(() => {   
+//       $("#video").removeClass("then");
+//   }, 420); 
+//   goo.removeClass('change');  
     
-  }
-  myVideo.addEventListener('ended', function() {
-    myVideo.load();     
-  });
+//   }
+//   myVideo.addEventListener('ended', function() {
+//     myVideo.load();     
+//   });
 
-  console.log(myVideo);
-});
+//   console.log(myVideo);
+// });
 
 $(document).ready(function() {
   $('.count').each(function() {
@@ -116,9 +116,9 @@ $(document).ready(function() {
               }            
             });
             if(target === 'about'){
-              $('#main-card').css("background-image", "url(http://localhost/design-pro/image/Lines.png), url(http://localhost/design-pro/image/About_background.jpg)")
+              $('#main-card').css("background-image", "url(image/Lines.png), url(image/About_background.jpg)")
             } else if(target === 'home'){
-              $('#main-card').css("background-image", "url(http://localhost/design-pro/image/Lines.png), url(http://localhost/design-pro/image/Background.jpg)")
+              $('#main-card').css("background-image", "url(image/Lines.png), url(image/Background.jpg)")
             }else {
               $('#main-card').css("background-image", "none");
             } 
