@@ -10,7 +10,10 @@ $(document).ready(function() {
 });
 
 
+
 $(document).ready(function() {
+
+ 
 
 
 
@@ -36,50 +39,50 @@ function myMap() {
   var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 }
 
-let myVideo = document.getElementById("video"); 
-document.getElementById("video").addEventListener('click', (event) => {
-  if(myVideo.paused){
-    setTimeout(() => {   
-      myVideo.play();
-      myVideo.controls = true;    
-  }, 380); 
+// let myVideo = document.getElementById("video"); 
+// document.getElementById("video").addEventListener('click', (event) => {
+//   if(myVideo.paused){
+//     setTimeout(() => {   
+//       myVideo.play();
+//       myVideo.controls = true;    
+//   }, 380); 
 
-  myVideo.classList.add("goVideo");
-  const goo= $("#content")
-  goo.addClass('change');
-  }else {
-    $("#video").removeClass("goVideo");
-    const goo= $("#content")
-    $("#video").addClass("then");
-    $("#video").removeClass("goVideo");
-    setTimeout(() => {   
-      $("#video").removeClass("then");
-  }, 420); 
-  goo.removeClass('change');  
+//   myVideo.classList.add("goVideo");
+//   const goo= $("#content")
+//   goo.addClass('change');
+//   }else {
+//     $("#video").removeClass("goVideo");
+//     const goo= $("#content")
+//     $("#video").addClass("then");
+//     $("#video").removeClass("goVideo");
+//     setTimeout(() => {   
+//       $("#video").removeClass("then");
+//   }, 420); 
+//   goo.removeClass('change');  
     
-  }
-  myVideo.addEventListener('ended', function() {
-    myVideo.load();     
-  });
+//   }
+//   myVideo.addEventListener('ended', function() {
+//     myVideo.load();     
+//   });
 
-  console.log(myVideo);
+//   console.log(myVideo);
+// });
+
+
+$('.count').each(function() {
+  var $this = this;
+  let countTo = $this.dataset.count;
+  let localStart = 0;
+  setInterval(function() {
+    if (localStart < countTo) {
+      localStart++;
+      $this.innerHTML = localStart;
+    }
+  }, 40);
+  console.log(countTo);
+  
 });
 
-$(document).ready(function() {
-  $('.count').each(function() {
-    var $this = this;
-    let countTo = $this.dataset.count;
-    let localStart = 0;
-    setInterval(function() {
-      if (localStart < countTo) {
-        localStart++;
-        $this.innerHTML = localStart;
-      }
-    }, 40);
-    console.log(countTo);
-    
-  });
-});
 
 
 
@@ -116,9 +119,9 @@ $(document).ready(function() {
               }            
             });
             if(target === 'about'){
-              $('#main-card').css("background-image", "url(http://localhost/design-pro/image/Lines.png), url(http://localhost/design-pro/image/About_background.jpg)")
+              $('#main-card').css("background-image", "url(image/Lines.png), url(image/About_background.jpg)")
             } else if(target === 'home'){
-              $('#main-card').css("background-image", "url(http://localhost/design-pro/image/Lines.png), url(http://localhost/design-pro/image/Background.jpg)")
+              $('#main-card').css("background-image", "url(image/Lines.png), url(image/Background.jpg)")
             }else {
               $('#main-card').css("background-image", "none");
             } 
@@ -136,15 +139,53 @@ setTimeout(()=> {
   let dodo = $('.up2')
   dodo.css({"animation": "opend 1s ease-in-out forwards"});
 }, 1300);
-
-
-
-
-        
-
-          
+         
     });
 })();
 });
 
+$('.social-btn').click(function(el) {
 
+  // $('.social-btn svg')[0].dataset.icon = 'angle-left'
+  console.log( $('.social-btn svg'));
+  $('.home-social-icon').toggleClass('active-social')
+  var btnIcon = $('.social-btn svg')[0].dataset.icon
+  if(btnIcon === 'angle-left'){
+    $('.social-btn svg')[0].dataset.icon = 'angle-right';
+  } else {
+    $('.social-btn svg')[0].dataset.icon = 'angle-left';
+  }
+  console.log( $('.social-btn svg'));
+  
+});    
+
+// Animation burger menu 
+
+var touch = $('#burger-menu');
+var menu = $('.mobile');
+
+
+$(touch).click(function(e) {
+  e.preventDefault();
+  menu.toggleClass('act-mobile');
+  var arr = [];  
+    $('.mobile-menu ul li').each((el, val) => {     
+      arr.push(val);                
+    });  
+
+    if(menu.hasClass('act-mobile')) {
+      arr.forEach((val, index) => {
+        $(val).css({"animation": `dreg-out ${0.6 + (0.1*index)}s cubic-bezier(1.000, 0.015, 0.325, 0.985) forwards`});
+      });
+
+     } else {
+      arr.reverse();
+      arr.forEach((val, index) => {
+        $(val).css({"animation": `dreg-in ${0.6 - (0.1*index)}s cubic-bezier(1.000, 0.015, 0.325, 0.985) forwards`});
+      });
+     }
+
+
+ 
+
+});

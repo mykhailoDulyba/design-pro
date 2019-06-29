@@ -31,7 +31,7 @@ Purchase:
 
  
   	<!-- favicon links -->
-	<link rel="shortcut icon" type="image/ico" href="http://localhost/design-pro/image/favicon-32x32.png" />
+	<link rel="shortcut icon" type="image/ico" href="image/favicon-32x32.png" />
 </head>
 <body>
   <div class="open">
@@ -62,6 +62,9 @@ Purchase:
             <li><a href=""><i class="fab fa-instagram"></i></a></li>
             <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
           </ul>
+          <div class="social-btn">
+              <i class="fas fa-angle-right"></i>
+          </div>
         </div>
         <div id="" class="main-card-view" >
           <header>
@@ -69,8 +72,23 @@ Purchase:
               <a href="">DesignX</a>
             </div>
             <div class="email">
-              <i id="burger-menu" class="burger-menu fas fa-bars fa-2x"></i>
+              <div id="burger-menu">
+                  <i  class="burger-menu fas fa-bars fa-2x"></i>
+              </div> 
+              
               <a href="">yourmail@domain.com</a>
+              <header class="mobile">
+                <nav class="mobile-menu">
+                  <ul>
+                    <li class="home" ><a href="home">Home</a></li>
+                    <li class="about"><a href="about">About</a></li>
+                    <li class="services" ><a href="services">Services</a></li>
+                    <li class="portfolio"><a href="portfolio">Portfolio</a></li>
+                    <li class="testimonials"><a href="testimonials">Testimonials</a></li>
+                    <li class="contact"><a href="contact">Contact</a></li>
+                  </ul>        
+                </nav>                
+              </header>
             </div>
           </header>
           <div class="card-section home-card active-section">
@@ -187,44 +205,46 @@ Purchase:
           <div id="" class="card-section portfolio-card">
             <div class="work-bts">
                 <ul>
-                    <li class="work-bt" data-filter="all">all</li>
-                    <li class="work-bt" data-filter="website">website</li>
-                    <li class="work-bt" data-filter="psd">psd</li>
-                    <li class="work-bt" data-filter="logos">logos</li>
+                    <li class="work-bt" data-filter="all">All</li>
+                    <li class="work-bt" data-filter="website">Branding</li>
+                    <li class="work-bt" data-filter="psd">Graphic Design</li>
+                    <li class="work-bt" data-filter="logos">Web Design</li>
+                    <li class="work-bt" data-filter="all">Marketing</li>
+                    <li class="work-bt" data-filter="website">Video</li>
                 </ul>
             </div>
           <div class="gallery">
             <div class="portfolio-block filter website">
-                <!-- <img src="http://localhost//design-pro/image/portfolio/1.jpg" alt=""> -->
-                <video id="video"     height="100%";
+                <img src="image/portfolio/1.jpg" alt="">
+                <!-- <video id="video"     height="100%";
                  width="100%" poster="http://localhost//design-pro/image/portfolio/2.jpg">
                     <source src="http://localhost//design-pro/image/BigBuckBunny640x360.m4v" type="video/mp4">                   
                     Your browser does not support HTML5 video.
-                </video>   
+                </video>    -->
               </div>
               <div class="portfolio-block filter website">
-                <img src="http://localhost//design-pro/image/portfolio/2.jpg" alt="">
+                <img src="image/portfolio/2.jpg" alt="">
               </div>
               <div class="portfolio-block filter website">
-                <img src="http://localhost//design-pro/image/portfolio/3.jpg" alt="">
+                <img src="image/portfolio/3.jpg" alt="">
               </div>
               <div class="portfolio-block filter psd">
-                <img src="http://localhost//design-pro/image/portfolio/4.jpg" alt="">
+                <img src="image/portfolio/4.jpg" alt="">
               </div>
               <div class="portfolio-block filter psd">
-                <img src="http://localhost//design-pro/image/portfolio/5.jpg" alt="">
+                <img src="image/portfolio/5.jpg" alt="">
               </div>
               <div class="portfolio-block filter psd">
-                <img src="http://localhost//design-pro/image/portfolio/6.jpg" alt="">
+                <img src="image/portfolio/6.jpg" alt="">
               </div>
               <div class="portfolio-block filter logos">
-                <img src="http://localhost//design-pro/image/portfolio/1.jpg" alt="">
+                <img src="image/portfolio/1.jpg" alt="">
               </div>
               <div class="portfolio-block filter logos">
-                <img src="http://localhost//design-pro/image/portfolio/2.jpg" alt="">
+                <img src="image/portfolio/2.jpg" alt="">
               </div>
               <div class="portfolio-block filter logos">
-                <img src="http://localhost//design-pro/image/portfolio/3.jpg" alt="">
+                <img src="image/portfolio/3.jpg" alt="">
               </div>
           </div>            
         </div>
@@ -310,12 +330,12 @@ Purchase:
             </div>
           </footer>
         </div>
-      </section>     
+      </section>
     </div>
-    <header>
-      <nav>
+    <header class="main">
+      <nav class="main-menu">
         <ul>
-          <li class="home" ><a href="home">Home</a></li>
+          <li class="home active-nav" ><a href="home">Home</a></li>
           <li class="about"><a href="about">About</a></li>
           <li class="services" ><a href="services">Services</a></li>
           <li class="portfolio"><a href="portfolio">Portfolio</a></li>
@@ -324,6 +344,7 @@ Purchase:
         </ul>        
       </nav>
     </header>
+
   </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
