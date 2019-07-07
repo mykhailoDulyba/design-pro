@@ -92,10 +92,10 @@ $('.count').each(function() {
     navLinks.click(function(){ 
                
          
-      let ad = $('.up1')
-      ad.css({"animation": "close 1s cubic-bezier(0.740, 0.150, 0.835, 0.345) forwards"});
-      let dod = $('.up2')
-      dod.css({"animation": "close 1.3s cubic-bezier(0.740, 0.150, 0.835, 0.345) forwards"}); 
+      // let ad = $('.up1')
+      // ad.css({"animation": "close 1s cubic-bezier(0.740, 0.150, 0.835, 0.345) forwards"});
+      // let dod = $('.up2')
+      // dod.css({"animation": "close 1.3s cubic-bezier(0.740, 0.150, 0.835, 0.345) forwards"}); 
     
    
         let self = $(this);
@@ -130,15 +130,15 @@ $('.count').each(function() {
           $(targetClass).addClass('active-nav');
                  
  
-setTimeout(()=> {
-  let ad = $('.up1')
-  ad.css({"animation": "opend 1.6s ease-in-out forwards"});
-}, 1300);
+// setTimeout(()=> {
+//   let ad = $('.up1')
+//   ad.css({"animation": "opend 1.6s ease-in-out forwards"});
+// }, 1300);
 
-setTimeout(()=> {
-  let dodo = $('.up2')
-  dodo.css({"animation": "opend 1s ease-in-out forwards"});
-}, 1300);
+// setTimeout(()=> {
+//   let dodo = $('.up2')
+//   dodo.css({"animation": "opend 1s ease-in-out forwards"});
+// }, 1300);
          
     });
 })();
