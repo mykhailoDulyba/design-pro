@@ -7,13 +7,7 @@
 $(document).ready(function() {
   $('.layer').removeClass('data'); 
 
-});
 
-
-
-$(document).ready(function() {
-
- 
 
 
 
@@ -98,10 +92,11 @@ $('.count').each(function() {
       // dod.css({"animation": "close 1.3s cubic-bezier(0.740, 0.150, 0.835, 0.345) forwards"}); 
     
    
-        let self = $(this);
-          let target = self.children().attr('href');
+          let self = $(this);
+          let target = self.children().attr("data-page");
           let targetClass = '.' + target;
           let targetSection = $(`${targetClass}-card`);
+          let menuType = self.parent().parent().hasClass('main-menu');
 
           navLinks.each((el, val) => {
             const currentNav = val.className;
@@ -127,7 +122,11 @@ $('.count').each(function() {
             } 
             targetSection.addClass('active-section'); 
           }, 600);
+
           $(targetClass).addClass('active-nav');
+          if(!menuType) {
+
+          }
                  
  
 // setTimeout(()=> {
@@ -142,7 +141,7 @@ $('.count').each(function() {
          
     });
 })();
-});
+
 
 $('.social-btn').click(function(el) {
 
@@ -189,3 +188,7 @@ $(touch).click(function(e) {
  
 
 });
+
+
+});
+
