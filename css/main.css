@@ -1021,6 +1021,10 @@ nav.mobile-menu ul li a {
 }
 
 @media only screen and (max-width: 1150px) {
+    .page {
+        min-height: 510px;
+    }  
+
     .page > header.main {
        display: none;
     }
@@ -1118,18 +1122,37 @@ nav.mobile-menu ul li a {
         grid-row: auto;
         padding-top: 20px;
     }
+
+    .home-video>div img {
+        max-width: 240px;
+    }
+
     .home-title {
         grid-column: 1/1;
         grid-row: 1/1;
         text-align: center;
     }
+
+    .home-title h1 {
+        font-size: 42px;
+    }
 }
 
 @media only screen and (max-width: 512px) {
+    .home-title h1 {
+        font-size: 36px;
+    }
+    .home-title h2 {
+        font-size: 2.5rem;
+    }
     .home-footer-info {
         justify-content: center;
     }
     .location {
         display: none;
     }
+    .copirate a {
+        font-size: 12px;
+    }
+
 }
