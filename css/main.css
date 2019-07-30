@@ -222,6 +222,7 @@ body, html{
     color: #797979;
     min-height: 100vh;
     font-family: 'HelveticaNeueCyr';
+    overflow-x: hidden;
 }
 /*---------- Custom Css Start -------*/
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP:400,500,700,900');
@@ -264,6 +265,21 @@ textarea:focus {
 	outline: none;
 	box-shadow:none;
 }
+ /* width */
+ ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #4e4e4e;
+    border-radius: 20px;
+  }
 
 
 /*-- Preloader css start --*/
@@ -478,6 +494,7 @@ height: 60px;
     visibility: visible;
 }
 .card-section{
+    overflow: auto;
     transition: ease-in-out 0.5s
 }
 
@@ -1015,16 +1032,15 @@ nav.mobile-menu ul li a {
     .services-wrap {
         justify-content: center;
     }
+    .service-block p{
+        font-size: 1.5rem;
+    }
     
     
 
 }
 
 @media only screen and (max-width: 1150px) {
-    .page {
-        min-height: 510px;
-    }  
-
     .page > header.main {
        display: none;
     }
@@ -1069,18 +1085,6 @@ nav.mobile-menu ul li a {
         position: relative;
         z-index: 50;
     }
-
-    /* .home-social-icon:before {
-        content: '';
-        display: block;
-        height: 100%;
-        width: 1px;
-        position: absolute;
-        background: #00afaa;
-        top: 0;
-        right: -1px;
-        z-index: 20;
-    } */
 
     .social-btn {
         display: block;
@@ -1138,6 +1142,28 @@ nav.mobile-menu ul li a {
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .about-card{
+        grid-template-columns: 0.5fr 1fr;
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+    .portfolio-block img {
+        height: inherit;
+    }
+    .testimonials-wrap {     
+        grid-template-columns: 1fr;
+    }
+    .contact-wrap {
+        grid-template-columns: 1fr;  
+        justify-items: center;
+    }
+    #map iframe {        
+        padding-top: 50px;
+    }
+}
+
 @media only screen and (max-width: 512px) {
     .home-title h1 {
         font-size: 36px;
@@ -1153,6 +1179,10 @@ nav.mobile-menu ul li a {
     }
     .copirate a {
         font-size: 12px;
+    }
+
+    .about-card {
+        grid-template-columns: 1fr;
     }
 
 }
