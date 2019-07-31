@@ -634,6 +634,10 @@ nav.main-menu ul li:nth-child(6) {
     padding-bottom: 5px;
     font-size: 1.7rem;
 }
+.home-social-icon ul li a:hover {
+    color: #00a9a4;
+}
+
 
 .main-card-view{    
     width: 100%;
@@ -1050,10 +1054,13 @@ nav.mobile-menu ul li a {
         position: relative;
         z-index: 80;
     }
+    
     header.mobile{ 
         display: block;
     }
-    
+    nav.mobile-menu ul li.active-nav a{
+        color: #00afaa;
+    }
     .email a{ 
         display: none;
     }
@@ -1156,7 +1163,7 @@ nav.mobile-menu ul li a {
         grid-template-columns: 1fr;
     }
     .contact-wrap {
-        grid-template-columns: 1fr;  
+        flex-direction: column;
         justify-items: center;
     }
     #map iframe {        

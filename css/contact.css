@@ -5,8 +5,7 @@
 }
 
 .contact-wrap{
-    display: grid;
-    grid-template-columns: 0.8fr 1fr;
+    display: flex;
     height: 100%;
     align-items: center;
 }
@@ -20,6 +19,7 @@
     background: #fff;
     height: 100%;
     max-height: 602px;
+    min-height: 450px;
     border-radius: 20px;
     min-width: 285px;
 }
