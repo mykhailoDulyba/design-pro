@@ -105,6 +105,7 @@ function init() {
   $(touch).click(function() {
     menu.toggleClass('act-mobile');
     menuAnimation();
+    touch.toggleClass('active-data')
   });
 
   function menuAnimation() {
@@ -136,7 +137,6 @@ function init() {
       $(val).css({"animation": `dreg-in ${0.6 - (0.1*index)}s cubic-bezier(1.000, 0.015, 0.325, 0.985) forwards`});
     });
   }
-
 
 };
 
