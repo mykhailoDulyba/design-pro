@@ -30,7 +30,8 @@
 }
 
 .about-btn-preview button{
-    background: #00afaa;
+    cursor: pointer;
+    background: #008e8a;    
     border: none;
     font-size: 15px;
     border-radius: 47px;
@@ -38,6 +39,11 @@
     margin-right: 8px;
     font-weight: 600;
     padding: 8px 37px 8px 32px;
+    transition: background 0.25s ease-in-out;
+}
+
+.about-btn-preview button:hover{
+    background: #00afaa;
 }
 
 .about-btn-preview a{

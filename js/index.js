@@ -40,51 +40,6 @@ function init() {
     }, 40);  
   });
 
-
-
-
-  let navLinks = $('nav ul li');
-  const sections = $('.card-section'); 
-
-  navLinks.click(function(){
-    let self = $(this);
-    let target = self.children().attr("data-page");
-    let targetClass = '.' + target;
-    let targetSection = $(`${targetClass}-card`);
-    let menuType = self.parent().parent().hasClass('main-menu');
-
-    navLinks.each((el, val) => {
-      const currentNav = val.className;
-      if(currentNav.includes('active-nav')){
-        val.classList.remove('active-nav');
-        
-      }            
-    });
-
-    sections.each((el, val) => {
-      var currentSection = val.className;
-      if(currentSection.includes('active-section')){
-        val.classList.remove('active-section');
-      }            
-    });
-
-    if(target === 'about'){
-      $('#main-card').css("background-image", "url(image/Lines.png), url(image/About_background.jpg)")
-    } else if(target === 'home'){
-      $('#main-card').css("background-image", "url(image/Lines.png), url(image/Background.jpg)")
-    }else {
-      $('#main-card').css("background-image", "none");
-    } 
-    targetSection.addClass('active-section');
-
-    $(targetClass).addClass('active-nav');
-
-    var menuItems =  getMenuItems();
-    menuAnimationOff(menuItems);
-    menu.removeClass('act-mobile');
-   
-  });
-
   // Social button
 
   $('.social-btn').click(function(el) {
@@ -98,7 +53,6 @@ function init() {
   });    
 
 // Animation burger menu 
-
   var touch = $('#burger-menu');
   var menu = $('.mobile');
 
@@ -137,6 +91,52 @@ function init() {
       $(val).css({"animation": `dreg-in ${0.6 - (0.1*index)}s cubic-bezier(1.000, 0.015, 0.325, 0.985) forwards`});
     });
   }
+
+
+ // Navigation function
+
+  let navLinks = $('nav ul li');
+  const sections = $('.card-section'); 
+
+  navLinks.click(function(){
+    let self = $(this);
+    let target = self.children().attr("data-page");
+    let targetClass = '.' + target;
+    let targetSection = $(`${targetClass}-card`);
+
+    navLinks.each((el, val) => {
+      const currentNav = val.className;
+      if(currentNav.includes('active-nav')){
+        val.classList.remove('active-nav');
+        
+      }            
+    });
+
+    sections.each((el, val) => {
+      var currentSection = val.className;
+      if(currentSection.includes('active-section')){
+        val.classList.remove('active-section');
+      }            
+    });
+
+    if(target === 'about'){
+      $('#main-card').css("background-image", "url(image/Lines.png), url(image/About_background.jpg)")
+    } else if(target === 'home'){
+      $('#main-card').css("background-image", "url(image/Lines.png), url(image/Background.jpg)")
+    }else {
+      $('#main-card').css("background-image", "none");
+    } 
+    targetSection.addClass('active-section');
+
+    $(targetClass).addClass('active-nav');
+
+    var menuItems =  getMenuItems();
+    menuAnimationOff(menuItems);
+    menu.removeClass('act-mobile');
+    touch.removeClass('active-data')
+   
+  });
+
 
 };
 
