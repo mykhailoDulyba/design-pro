@@ -1,6 +1,11 @@
 .services-card{    
-    overflow-y: auto;
-    display: none;
+    z-index: -1;
+    opacity: 0;
+    position: absolute;     
+    pointer-events: none;
+    visibility: hidden;  
+    display: flex;
+    overflow-y: auto;    
     align-items: center;
 }
 

@@ -1,6 +1,11 @@
 .testimonials-card{
+    z-index: -1;
+    opacity: 0;
+    position: absolute;     
+    pointer-events: none;
+    visibility: hidden; 
     overflow-y: auto;
-    display: none;
+    display: flex;
     align-items: center;
 }
 

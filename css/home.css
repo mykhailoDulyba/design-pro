@@ -1,8 +1,11 @@
 .home-card {
-    display: none;
+    z-index: -1;
+    opacity: 0;
+    position: absolute;     
+    pointer-events: none;
+    visibility: hidden;       
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    display: none;
+    grid-template-columns: 1fr 1fr 1fr 1fr;   
 }
 
 .home-video>div {
@@ -82,3 +85,8 @@
     letter-spacing: 2px;
   }
   
+
+
+  /* z-index: 111;
+    visibility: hidden;
+    opacity: 0; */

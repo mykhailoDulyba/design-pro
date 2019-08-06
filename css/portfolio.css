@@ -1,9 +1,13 @@
   
 .portfolio-card{
+    z-index: -1;
+    opacity: 0;
+    position: absolute;     
+    pointer-events: none;
+    visibility: hidden;  
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
-    display: none;
+    overflow-y: auto;    
 }
 
 .work-bts ul{
