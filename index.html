@@ -90,10 +90,19 @@ Purchase:
           <div class="card-section home-card active-section">
             <div class="home-video">
               <div class="inner-video">
-                  <img src="./image/Video.jpg" alt="">       
-                  <i class="fas fa-play-circle"></i>
-                  <p>INSPIRATION AND WORK PROCESS</p>           
-              </div>
+                <div class="img-left"></div>
+                <div class="img-right"></div>
+                <div id="play-video">
+                    <i class="fas fa-play-circle"></i>
+                </div>                
+                <p class="video-title">INSPIRATION AND WORK PROCESS</p> 
+                <div id="video-placeholder"></div>
+                <div class="payer-control"> 
+                  <div id="stop-video">
+                    <i class="far fa-pause-circle"></i>
+                  </div>                                    
+                </div>                          
+              </div>              
             </div>
             <div class="home-title">
               <h1>I’M</h1>
@@ -350,6 +359,7 @@ Purchase:
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
   <script src="js/index.js"></script>
   <script src="js/typed.min.js"></script>
+  <script src="https://www.youtube.com/iframe_api"></script>  
   <script type="text/javascript">
     var typed = new Typed(".type", {
     strings: ["Web Develober", "Web Designer", "Software Engineer" ],
@@ -357,6 +367,43 @@ Purchase:
     backSpeed: 60,
     loop: true
   });
+
+
+
+
+var player;
+function onYouTubeIframeAPIReady() {
+    player = new YT.Player('video-placeholder', {
+        width: 580,
+        height: 390,
+        videoId: 'Xa0Q0J5tOP0',
+        playerVars: {
+            color: 'white',
+            playlist: 'taJ60kskkns,FG0fTKAqZ5g'
+        },
+        events: {
+            onReady: initialize
+        }
+    });
+}
+
+function initialize(){
+
+    // Update the controls on load
+    updateTimerDisplay();
+    updateProgressBar();
+
+    // Clear any old interval.
+    clearInterval(time_update_interval);
+
+    // Start interval to update elapsed time display and
+    // the elapsed part of the progress bar every second.
+    time_update_interval = setInterval(function () {
+        updateTimerDisplay();
+        updateProgressBar();
+    }, 1000)
+}
+
   </script>
 
 </body>

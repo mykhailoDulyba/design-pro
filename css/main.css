@@ -498,15 +498,19 @@ height: 60px;
     visibility: visible;
     position: relative;
     pointer-events: inherit;
-    z-index: -99999;
+    z-index: 50;
     opacity: 1;
 }
 
+/*
 
+<img src="./image/Video.jpg" alt="">  
 
+<i class="fas fa-play-circle"></i>
+<p>INSPIRATION AND WORK PROCESS</p> 
+<div id="video-placeholder"></div>    
 
-
-
+*/
 
 
 
@@ -615,6 +619,7 @@ nav.main-menu ul li:nth-child(6) {
     transition: 0.5s;
     z-index: 4;
     opacity: 1;
+    overflow: hidden;
     /* background-image: url(../image/Lines.png), url(../image/About_background.jpg); */
 }
 .home-social-icon{
@@ -1048,6 +1053,32 @@ nav.mobile-menu ul li a {
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media only screen and (max-width: 1400px) {
     body, html{
         font-size: 8px;
@@ -1165,14 +1196,23 @@ nav.mobile-menu ul li a {
         align-items: end;
     }
     .home-video {
-        justify-self: center;
         grid-column: 1/3;
         grid-row: auto;
         padding-top: 20px;
+        display: flex;
+        justify-content: center;
     }
 
-    .home-video>div img {
+    #video-placeholder {
         max-width: 240px;
+        min-height: 160px;
+        height: 100%;
+    }
+
+
+    .inner-video{
+        max-width: 240px;
+        min-height: 160px;
     }
 
     .home-title {

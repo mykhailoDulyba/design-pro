@@ -138,5 +138,29 @@ function init() {
   });
 
 
+
+
+$('#play-video').click(function () { 
+
+  $('.img-left').css("transform", "translate(-100%, 0)");
+  $('.img-right').css("transform", "translate(100%, 0)");
+  $('.video-title').css("transform", "translate(-50%, -750%)");
+  $('#play-video svg').css("opacity", "0");
+  $('.inner-video').addClass('acyive-video'); 
+  $('.payer-control').css("transform", "translate(0px, 0%)");
+  player.playVideo();
+  });
+
+  $('#stop-video').click(function () { 
+
+    $('.img-left').css("transform", "translate(0%, 0)");
+    $('.img-right').css("transform", "translate(0%, 0)");
+    $('.video-title').css("transform", "translate(-50%, -50%)");
+    $('#play-video svg').css("opacity", "1");
+    $('.inner-video').removeClass('acyive-video');  
+    $('.payer-control').css("transform", "translate(0px, 100%)");
+    player.pauseVideo();
+    });
+
 };
 
