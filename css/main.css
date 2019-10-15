@@ -1219,13 +1219,16 @@ nav.mobile-menu ul li a {
     .about-card{
         grid-template-columns: 0.5fr 1fr;
     }
+    .work-bts ul{
+        justify-content: center;
+    }
     .gallery {
         grid-template-columns: 1fr;
     }
     .portfolio-block img {
         height: inherit;
     }
-    .testimonials-wrap {     
+    .testimonials-wrap {
         grid-template-columns: 1fr;
     }
     .contact-wrap {
