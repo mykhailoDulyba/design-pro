@@ -299,6 +299,7 @@ textarea:focus {
 .page > header.main {
     max-width: 590px;
     width: 100%;
+    transition: opacity 0.3s ease-in;
 }
 .main-menu {
     max-width: 590px;
@@ -501,22 +502,6 @@ height: 60px;
     z-index: 50;
     opacity: 1;
 }
-
-/*
-
-<img src="./image/Video.jpg" alt="">  
-
-<i class="fas fa-play-circle"></i>
-<p>INSPIRATION AND WORK PROCESS</p> 
-<div id="video-placeholder"></div>    
-
-*/
-
-
-
-
-
-
 
 
 
@@ -983,10 +968,10 @@ header.mobile{
     width: 100%;
     height: 100%;
     display: none;
+    overflow: scroll;
     justify-content: center;
     z-index: 70;
-    background: #171717;
-    padding-top: 60px;
+    background: #171717;    
     transform: translate(100%);
     transition: transform 0.5s cubic-bezier(1.000, 0.015, 0.325, 0.985);
 }
@@ -1006,13 +991,11 @@ nav.mobile-menu ul{
 nav.mobile-menu ul li{
     position: relative;
     padding-bottom: 20px;
-    padding-top: 20px;    
-    /* animation-name: dreg-out;
-    animation-timing-function: cubic-bezier(1.000, 0.015, 0.325, 0.985);
-    animation-fill-mode: forwards; */
+    padding-top: 20px; 
 }
-
-
+nav.mobile-menu ul li:first-child{
+    padding-top: 60px;
+}
 
 nav.mobile-menu ul li:before{
     content: '';
@@ -1092,6 +1075,11 @@ nav.mobile-menu ul li a {
     .home-social-icon ul li {      
         font-size: 1.9rem;
     }
+    
+    .inner-video{
+        height: 225px;
+    }
+
     .counter-block div p { 
         font-size: 8rem;
         padding-bottom: 10px;
@@ -1144,7 +1132,7 @@ nav.mobile-menu ul li a {
         position: absolute;
         top: 0;
         left: 0;
-        z-index: 50;
+        z-index: 80;
         transition: transform 0.5s cubic-bezier(1.000, 0.015, 0.325, 0.985);
         box-shadow: 20px 1px 20px 0px rgba(0, 0, 0, 0.45);
     }
@@ -1213,6 +1201,7 @@ nav.mobile-menu ul li a {
     .inner-video{
         max-width: 240px;
         min-height: 160px;
+        height: auto;
     }
 
     .home-title {
@@ -1242,6 +1231,9 @@ nav.mobile-menu ul li a {
     .contact-wrap {
         flex-direction: column;
         justify-items: center;
+    }
+    .contact-wrap section{
+        height: auto;
     }
     #map iframe {        
         padding-top: 50px;

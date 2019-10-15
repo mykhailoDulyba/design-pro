@@ -27,6 +27,17 @@ Purchase:
   <link rel="stylesheet" href="css/testimonials.css"> 
   <link rel="stylesheet" href="css/contact.css"> 
   <link rel="stylesheet" href="css/main.css"> 
+  <!-- Magnific Popup core CSS file -->
+  <!-- <link rel="stylesheet" href="css/magnific-popup.css"> -->
+  <link rel="stylesheet" href="css/gallery/photoswipe.css"> 
+
+  <!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+     In the folder of skin CSS file there are also:
+     - .png and .svg icons sprite, 
+     - preloader.gif (for browsers that do not support CSS animations) -->
+  <link rel="stylesheet" href="css/gallery/default-skin/default-skin.css"> 
+
+
   <script defer src="https://use.fontawesome.com/releases/v5.8.1/js/all.js" integrity="sha384-g5uSoOSBd7KkhAMlnQILrecXvzst9TdC09/VM+pjDTCM+1il8RHz5fKANTFFb+gQ" crossorigin="anonymous"></script>
 
  
@@ -88,10 +99,11 @@ Purchase:
             </div>
           </header>
           <div class="card-section home-card active-section">
+
             <div class="home-video">
-              <div class="inner-video">
-                <div class="img-left"></div>
-                <div class="img-right"></div>
+              <div class="inner-video">       
+                <img class="img-left" src="image/Video1.jpg" alt="">
+                <img class="img-right" src="image/Video2.jpg" alt="">
                 <div id="play-video">
                     <i class="fas fa-play-circle"></i>
                 </div>                
@@ -99,11 +111,14 @@ Purchase:
                 <div id="video-placeholder"></div>
                 <div class="payer-control"> 
                   <div id="stop-video">
-                    <i class="far fa-pause-circle"></i>
+                    <i class="fas fa-times"></i>
                   </div>                                    
                 </div>                          
               </div>              
             </div>
+
+
+
             <div class="home-title">
               <h1>I’M</h1>
               <h1>MARK</h1>
@@ -207,52 +222,67 @@ Purchase:
                   </div>
             </div>
           </div>
-          <div id="" class="card-section portfolio-card">
+          <div class="card-section portfolio-card">
             <div class="work-bts">
                 <ul>
-                    <li class="work-bt" data-filter="all">All</li>
+                    <li class="work-bt active-filter-button" data-filter="all">All</li>
                     <li class="work-bt" data-filter="website">Branding</li>
                     <li class="work-bt" data-filter="psd">Graphic Design</li>
                     <li class="work-bt" data-filter="logos">Web Design</li>
                     <li class="work-bt" data-filter="all">Marketing</li>
                     <li class="work-bt" data-filter="website">Video</li>
                 </ul>
-            </div>
-          <div class="gallery">
-            <div class="portfolio-block filter website">
-                <img src="image/portfolio/1.jpg" alt="">
-                <!-- <video id="video"     height="100%";
-                 width="100%" poster="http://localhost//design-pro/image/portfolio/2.jpg">
-                    <source src="http://localhost//design-pro/image/BigBuckBunny640x360.m4v" type="video/mp4">                   
-                    Your browser does not support HTML5 video.
-                </video>    -->
-              </div>
-              <div class="portfolio-block filter website">
-                <img src="image/portfolio/2.jpg" alt="">
-              </div>
-              <div class="portfolio-block filter website">
-                <img src="image/portfolio/3.jpg" alt="">
-              </div>
-              <div class="portfolio-block filter psd">
-                <img src="image/portfolio/4.jpg" alt="">
-              </div>
-              <div class="portfolio-block filter psd">
-                <img src="image/portfolio/5.jpg" alt="">
-              </div>
-              <div class="portfolio-block filter psd">
-                <img src="image/portfolio/6.jpg" alt="">
-              </div>
-              <div class="portfolio-block filter logos">
-                <img src="image/portfolio/1.jpg" alt="">
-              </div>
-              <div class="portfolio-block filter logos">
-                <img src="image/portfolio/2.jpg" alt="">
-              </div>
-              <div class="portfolio-block filter logos">
-                <img src="image/portfolio/3.jpg" alt="">
-              </div>
-          </div>            
-        </div>
+            </div>          
+              <div id="demo-test-gallery" class="container gallery demo-gallery " data-pswp-uid="1">
+                <a class="filter logos"  href="image/portfolio/3.jpg" data-size="1600x1068" data-med="image/portfolio/3.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
+                  <img class="portfolio-block " src="image/portfolio/3.jpg" alt="">
+                  <figure>This is dummy caption. It has been placed here solely to demonstrate the look and feel of finished, typeset text.</figure>
+                                
+                </a>
+                <a class="filter logos" href="image/portfolio/3.jpg" data-size="1600x1068" data-med="image/portfolio/3.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
+                  <img class="portfolio-block" src="image/portfolio/3.jpg" alt="">
+                  <figure>This is dummy caption. It has been placed here solely to demonstrate the look and feel of finished, typeset text.</figure>
+                                
+                </a>
+                <a class="filter website" href="image/portfolio/3.jpg" data-size="1600x1068" data-med="image/portfolio/3.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
+                  <img class="portfolio-block" src="image/portfolio/3.jpg" alt="">
+                  <figure>This is dummy caption. It has been placed here solely to demonstrate the look and feel of finished, typeset text.</figure>
+                                
+                </a>
+                <a class="filter psd" href="image/portfolio/3.jpg" data-size="1600x1068" data-med="image/portfolio/3.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
+                  <img class="portfolio-block" src="image/portfolio/3.jpg" alt="">
+                  <figure>This is dummy caption. It has been placed here solely to demonstrate the look and feel of finished, typeset text.</figure>
+                                
+                </a>
+                <a class="filter website" href="image/portfolio/3.jpg" data-size="1600x1068" data-med="image/portfolio/3.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
+                  <img class="portfolio-block" src="image/portfolio/3.jpg" alt="">
+                  <figure>This is dummy caption. It has been placed here solely to demonstrate the look and feel of finished, typeset text.</figure>
+                                
+                </a>
+                <a class="filter psd" href="image/portfolio/3.jpg" data-size="1600x1068" data-med="image/portfolio/3.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
+                  <img class="portfolio-block" src="image/portfolio/3.jpg" alt="">
+                  <figure>This is dummy caption. It has been placed here solely to demonstrate the look and feel of finished, typeset text.</figure>
+                                
+                </a> 
+                <a class="filter logos" href="image/portfolio/3.jpg" data-size="1600x1068" data-med="image/portfolio/3.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
+                  <img class="portfolio-block" src="image/portfolio/3.jpg" alt="">
+                  <figure>This is dummy caption. It has been placed here solely to demonstrate the look and feel of finished, typeset text.</figure>
+                                
+                </a>
+                <a class="filter psd" href="image/portfolio/3.jpg" data-size="1600x1068" data-med="image/portfolio/3.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
+                  <img class="portfolio-block" src="image/portfolio/3.jpg" alt="">
+                  <figure>This is dummy caption. It has been placed here solely to demonstrate the look and feel of finished, typeset text.</figure>
+                                
+                </a>
+                <a class="filter psd" href="image/portfolio/3.jpg" data-size="1600x1068" data-med="image/portfolio/3.jpg" data-med-size="1024x683" data-author="Samuel Rohl">
+                  <img class="portfolio-block" src="image/portfolio/3.jpg" alt="">
+                  <figure>This is dummy caption. It has been placed here solely to demonstrate the look and feel of finished, typeset text.</figure>
+                                
+                </a>     
+              </div>             
+                
+
+         </div>
         <div class="card-section testimonials-card">
           <div class="testimonials-wrap">
               <div class="testimonial-block">
@@ -352,11 +382,91 @@ Purchase:
         </ul>        
       </nav>
     </header>
-
   </div>
+              <!-- Photoswipe 4.0 html code for javascript interface -->
+                 
+                 
+                      
+              <!-- Root element of PhotoSwipe. Must have class pswp. -->
+              <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+              
+                <!-- Background of PhotoSwipe. 
+                     It's a separate element as animating opacity is faster than rgba(). -->
+                <div class="pswp__bg"></div>
+            
+                <!-- Slides wrapper with overflow:hidden. -->
+                <div class="pswp__scroll-wrap">
+            
+                    <!-- Container that holds slides. 
+                        PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                        Don't modify these 3 pswp__item elements, data is added later on. -->
+                    <div class="pswp__container">
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                        <div class="pswp__item"></div>
+                    </div>
+            
+                    <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                    <div class="pswp__ui pswp__ui--hidden">
+            
+                        <div class="pswp__top-bar">
+            
+                            <!--  Controls are self-explanatory. Order can be changed. -->
+            
+                            <div class="pswp__counter"></div>
+            
+                            <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+            
+                            <button class="pswp__button pswp__button--share" title="Share"></button>
+            
+                            <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+            
+                            <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+            
+                            <!-- Preloader demo https://codepen.io/dimsemenov/pen/yyBWoR -->
+                            <!-- element will get class pswp__preloader--active when preloader is running -->
+                            <div class="pswp__preloader">
+                                <div class="pswp__preloader__icn">
+                                  <div class="pswp__preloader__cut">
+                                    <div class="pswp__preloader__donut"></div>
+                                  </div>
+                                </div>
+                            </div>
+                        </div>
+            
+                        <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                            <div class="pswp__share-tooltip"></div> 
+                        </div>
+            
+                        <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                        </button>
+            
+                        <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                        </button>
+            
+                        <div class="pswp__caption">
+                            <div class="pswp__caption__center"></div>
+                        </div>
+            
+                    </div>
+            
+                </div>
+            
+            </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&callback=myMap"></script>
+  <!-- Magnific Popup core JS file -->
+  <!-- <script src="js/jquery.magnific-popup.js"></script> -->
+<!-- Core JS file -->
+<script src="css/gallery/photoswipe.min.js"></script> 
+
+<!-- UI JS file -->
+<script src="css/gallery/photoswipe-ui-default.min.js"></script> 
+
+
+
+
   <script src="js/index.js"></script>
   <script src="js/typed.min.js"></script>
   <script src="https://www.youtube.com/iframe_api"></script>  
