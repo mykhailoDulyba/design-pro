@@ -41,6 +41,15 @@
     position: relative;
     overflow: hidden;
 }
+
+.gallery-item-wrapper>svg{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 29px;
+    color: #fff;
+}
 .gallery-project-hover::after {
     content: '';
     display: block;
@@ -126,13 +135,17 @@
 }
 
 .selected-gallery-item{    
-    pointer-events: none;
+    pointer-events: none;   
 }
 
 .active-filter-button{
     color: #00afaa;
 }
 
-.demo-gallery figure {
-    display: none;
+.pswp__zoom-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;    
 }
+
+  
